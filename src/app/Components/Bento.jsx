@@ -24,7 +24,7 @@ const Bento = () => {
                 suscipit laboriosam, nisi ut aliquid.
               </p>
               <div className="flex items-center gap-4 justify-between font-semibold text-[#ffffff] text-[16px] w-fit">
-                <img src="/buttonarrows/redarico.svg" alt="" />
+                <img src="/buttonarrows/redarico.svg" className="rotate-45 hover:rotate-0 transition-transform duration-300 cursor-pointer" alt="" />
                 Explore More
               </div>
             </div>

@@ -90,7 +90,7 @@ const SlideSection = () => {
             {/* Navigation Buttons */}
             <div className="flex items-center pt-[45px] px-[5%] md:px-0 md:w-[60%] justify-between pb-[70px]">
               <div className="flex items-center gap-4 text-[#fff] text-[16px]">
-                <img src="/buttonarrows/redarico.svg" alt="" />
+                <img src="/buttonarrows/redarico.svg" className="rotate-45 hover:rotate-0 transition-transform duration-300 cursor-pointer" alt="" />
                 Explore Careers
               </div>
               <div className="flex gap-2 items-center">

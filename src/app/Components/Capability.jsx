@@ -14,33 +14,33 @@ const Capabilities = () => {
       heading: "Capital Deployment",
       content:
         "Capital Deployment Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.",
-      images: {
+     images: {
+        top: ["/OurCapabilities/dev_top1.png"],
+        bottom1: ["/OurCapabilities/dev_bottom1_1.png"],
+        bottom2: ["/OurCapabilities/dev_bottom2_1.png"],
+      },
+    },
+    {
+      title: "Land Acquisition",
+      heading: "Land Acquisition",
+      content:
+        "Land Acquisition Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.",
+     images: {
         top: ["/OurCapabilities/top1.png"],
         bottom1: ["/OurCapabilities/bottom1_1.png"],
         bottom2: ["/OurCapabilities/bottom2_1.png"],
       },
     },
     {
-      title: "Development",
-      heading: "Development",
-      content:
-        "Development Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.",
-      images: {
-        top: ["/OurCapabilities/dev_top1.png"],
-        bottom1: ["/OurCapabilities/dev_bottom1_1.png"],
-        bottom2: ["/OurCapabilities/dev_bottom2_1.png"],
-      },
-    },
-    // {
-    //     title: "Property Management",
-    //     heading: "Property Management",
-    //     content: "Property Management Lorem ipsum dolor sit amet...",
-    //     images: {
-    //         top: ["/OurCapabilities/pm_top1.png", "/OurCapabilities/pm_top2.png"],
-    //         bottom1: ["/OurCapabilities/pm_bottom1_1.png", "/OurCapabilities/pm_bottom1_2.png"],
-    //         bottom2: ["/OurCapabilities/pm_bottom2_1.png", "/OurCapabilities/pm_bottom2_2.png"]
-    //     }
-    // }
+        title: "Property Management",
+        heading: "Property Management",
+        content: "Property Management Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.",
+        images: {
+            top: ["/OurCapabilities/proTop.png"],
+            bottom1: ["/OurCapabilities/proBottom2.png"],
+            bottom2: ["/OurCapabilities/proBottom1.png"]
+        }
+    }
   ];
   const [activeTab, setActiveTab] = useState(0); // Track active tab index
   return (
@@ -48,9 +48,14 @@ const Capabilities = () => {
       <div className="bg-[#092241] md:h-auto h-fit flex items-end justify-end">
 
         <div className="border-white w-full  maxTab xl-1024:ml-[44px] xl-1280:ml-[59px] xl-1366:ml-[60px] xl-1440:ml-[90px] xl-1536:ml-[137px] xl-1600:ml-[175px] xl-1920:ml-[17.5%]  lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden">
-          <div className="leftCon flex-1 h-full">
+          <div className="leftCon flex-1 max-h-[600px] min-h-[600px]">
             <div className="pt-[40px]">
-              <LineHead heading="Our Capabilities" clr="text-white" />
+              <LineHead
+                heading="Our Capabilities"
+                bclr="#d7d7d7"
+                bopacity="34%"
+                clr="text-white"
+              />
             </div>
             {/* Tabs */}
             <div className="tabs flex gap-4">
@@ -70,9 +75,9 @@ const Capabilities = () => {
               ))}
             </div>
             {/* Animated Content Section */}
-            <div className="w-full h-auto pt-[30px]">
+            <div className="w-full max-h-500px min-h-500px pt-[30px]">
               <div className="w-[516px] xl-1024:w-[400px]">
-                <h1 className="tabHeading text-4xl md:text-5xl lg:text-[60px] text-white font-medium border-b-[8px] border-[#F7E327] pb-[20px]">
+                <h1 className="pb-2 tabHeading text-4xl md:text-5xl lg:text-[60px] text-white font-medium border-b-[8px] border-[#F7E327] ]">
                   {tabs[activeTab].heading}
                 </h1>
                 <p className="tabContent pt-12 text-xl gradinetText">
@@ -83,7 +88,7 @@ const Capabilities = () => {
             {/* Navigation Buttons */}
             <div className="flex items-center pt-[35px] xl:w-[60%] xl-1024:w-[90%] md:w-[70%] w-[100%] justify-between">
               <div className="flex items-center gap-4 text-[#fff] text-[16px]">
-                <img src="/buttonarrows/redarico.svg" alt="" />
+                <img src="/buttonarrows/redarico.svg" className="rotate-45 hover:rotate-0 transition-transform duration-300 cursor-pointer" alt="" />
                 Explore Capabilities
               </div>
               <div className="flex gap-2 items-center">

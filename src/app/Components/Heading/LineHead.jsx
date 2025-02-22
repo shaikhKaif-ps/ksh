@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const LineHead = ({ heading, clr }) => {
+const LineHead = ({ heading, clr, bclr, bopacity }) => {
   return (
     <div className="overflow-hidden w-full">
       <motion.div
@@ -13,7 +13,7 @@ const LineHead = ({ heading, clr }) => {
         className="overflow-hidden whitespace-nowrap"
       >
         <h2
-          className={`leading-[26px] w-full text-[20px] pb-[20px] border-b lg:mb-[66px] mb-[36px] border-[#D7D7D7] fsans-600 text-[#092241] ${clr}`}
+          className={`leading-[26px] w-full text-[20px] pb-[20px] border-b lg:mb-[66px] mb-[36px] border-[${bclr}] border-opacity-[${bopacity}] fsans-600 text-[#092241] ${clr}`}
         >
           {heading}
         </h2>
@@ -23,3 +23,9 @@ const LineHead = ({ heading, clr }) => {
 };
 
 export default LineHead;
+
+
+
+
+
+

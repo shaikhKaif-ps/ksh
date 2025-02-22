@@ -33,13 +33,14 @@ const Esg = () => {
                 </p>
               </div>
               <div className="flex items-center gap-4 pt-[45px] justify-between font-semibold text-[#092241] text-[16px] w-fit">
-                <img src="/buttonarrows/redarico.svg" alt="" />
+                <img src="/buttonarrows/redarico.svg" className="rotate-45 hover:rotate-0 transition-transform duration-300 cursor-pointer" alt="" />
                 Explore More
               </div>
             </div>
           </div>
-          <div className="hidden md:w-[60%] md:flex items-center justify-center border-2 border-red-400">
-            <video src="/Esg/EsgGif.webm" autoPlay loop muted></video>
+          <div className="hidden md:w-[60%] md:flex items-center justify-center">
+            <video src="/Esg/Frame-48097826.webm" autoPlay loop muted></video>
+            {/* <video src="/Esg/EsgGif.webm" autoPlay loop muted></video> */}
             {/* <motion.div
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}

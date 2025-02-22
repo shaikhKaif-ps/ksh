@@ -12,5 +12,5 @@ export default async function PFetch() {
   );
   const todos = await response.json();
 
-  return <Parent initialTodos={todos} />;
+  return <Parent  />;
 }

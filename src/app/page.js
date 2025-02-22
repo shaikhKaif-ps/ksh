@@ -17,7 +17,7 @@ export default function Home() {
       <LandingSwiper />
       <About />
       <Capabilities />
-      {/* <Usp /> */}
+      <Usp />
       <PFetch />
       <TrustedPartners />
       <Esg />

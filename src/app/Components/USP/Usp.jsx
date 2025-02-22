@@ -35,17 +35,18 @@ const Usp = () => {
     <div className="bg-white uspcontainer w-full flex items-center justify-center flex-col">
       <div className="flex flex-col max-w-[100vw] h-fit">
         
-        <div className="relative z-10 pt-[50px] max-w-[1250px] mx-auto w-full md:pt-[92px] h-fit flex flex-col ">
+        <div className="relative z-10 pt-[50px] max-w-[1250px] w-[90%] mx-auto  md:pt-[92px] h-fit flex flex-col ">
           <LineHead heading={"10 USPs Inside Our Parks"} />
         </div>
 
-        <div className="flex md:flex-row flex-col md:p-0 p-5 max-h-fit">
+        <div className="flex lg:flex-row flex-col md:p-0 p-5 max-h-fit">
           <div className="flex items-end justify-center mt-0 max-h-fit">
             {/* I want the height to be full its like height fit instaed */}
-            <img className="z-0 object-cover" src="/kshhmn.gif" alt="KSH Man" />
+            {/* <img className="z-0 object-cover" src="/kshhmn.gif" alt="KSH Man" /> */}
+            <img className="z-0 object-cover" src="/OurCapabilities/uspDummy.png" alt="KSH Man" />
           </div>
           <div className="lg:w-[60%] flex flex-col w-full h-fit max-w-full justify-center items-start  gap-[33px] pb-[110px]">
-            <div className="bg-red-500 flex sm:flex-row flex-col sm:items-center items-start justify-start gap-[20px] sm:gap-[92px] md:pr-[330px]">
+            <div className="flex sm:flex-row flex-col sm:items-center items-start justify-start gap-[20px] sm:gap-[92px] xl-1024:mr-[50px] xl-1280:mr-[59px] xl-1366:mr-[55px] xl-1600:mr-[171px]      xl-1536:mr-[145px] xl-1440:mr-[90px] xl-1920:mr-[29%]">
               <p className="fsans-400 text-[18px] leading-[26px] text-[#6C8DAB]">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
                 aliquid quas sapiente quaerat eligendi voluptatum necessitatibus
@@ -69,6 +70,7 @@ const Usp = () => {
                 </button>
               </div>
             </div>
+            
             <Swiper
               slidesPerGroup={1} // Ensures 1 slide per group
               className="max-w-full"

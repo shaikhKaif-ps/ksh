@@ -98,12 +98,92 @@ const About = () => {
             <ButtomComp />
           </div>
         </div>
-
-        <div className="absolute right-0 w-[373px] h-[251px] min-w-[373px] xl:flex hidden">
+        {/* 
+        <div className="absolute right-0 w-[373px] h-[251px] min-w-[373px] 2xl:flex hidden">
           <motion.div
             className="flex justify-end h-[251px] overflow-hidden"
             initial={{ width: 0 }}
             whileInView={{ width: "373px" }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 2, ease: "easeInOut", delay: 0 }}
+          >
+            <img
+              src="/truckinfra.jpg"
+              alt="Truck"
+              className="object-cover h-full"
+            />
+          </motion.div>
+        </div>
+
+        <div className="absolute right-0 w-[298.4px] h-[200.8px] min-w-[298.4px] 2xl:hidden xl:flex hidden">
+          <motion.div
+            className="flex justify-end h-[200.8px] overflow-hidden"
+            initial={{ width: 0 }}
+            whileInView={{ width: "298.4px" }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 2, ease: "easeInOut", delay: 0 }}
+          >
+            <img
+              src="/truckinfra.jpg"
+              alt="Truck"
+              className="object-cover h-full"
+            />
+          </motion.div>
+        </div>
+
+        <div className="absolute right-0 w-[186.5px] h-[125.5px] min-w-[186.5px] lg:hidden md:flex sm:hidden">
+          <motion.div
+            className="flex justify-end h-[125.5px] overflow-hidden"
+            initial={{ width: 0 }}
+            whileInView={{ width: "186.5px" }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 2, ease: "easeInOut", delay: 0 }}
+          >
+            <img
+              src="/truckinfra.jpg"
+              alt="Truck"
+              className="object-cover h-full"
+            />
+          </motion.div>
+        </div> */}
+
+        <div className="absolute right-0 w-[373px] h-[251px] min-w-[373px] 2xl:flex hidden">
+          <motion.div
+            className="flex justify-end h-[251px] overflow-hidden"
+            initial={{ width: 0 }}
+            whileInView={{ width: "373px" }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 2, ease: "easeInOut", delay: 0 }}
+          >
+            <img
+              src="/truckinfra.jpg"
+              alt="Truck"
+              className="object-cover h-full"
+            />
+          </motion.div>
+        </div>
+
+        <div className="absolute right-0 w-[298.4px] h-[200.8px] min-w-[298.4px] xl:flex 2xl:hidden hidden">
+          <motion.div
+            className="flex justify-end h-[200.8px] overflow-hidden"
+            initial={{ width: 0 }}
+            whileInView={{ width: "298.4px" }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 2, ease: "easeInOut", delay: 0 }}
+          >
+            <img
+              src="/truckinfra.jpg"
+              alt="Truck"
+              className="object-cover h-full"
+            />
+          </motion.div>
+        </div>
+
+        <div className="absolute right-0 w-[186.5px] h-[125.5px] min-w-[186.5px] lg:flex xl:hidden md:flex hidden">
+          <motion.div
+            className="flex justify-end h-[125.5px] overflow-hidden"
+            initial={{ width: 0 }}
+            whileInView={{ width: "186.5px" }}
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 2, ease: "easeInOut", delay: 0 }}
           >

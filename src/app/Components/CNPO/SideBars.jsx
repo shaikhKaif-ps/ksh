@@ -23,21 +23,23 @@
 
 import React from "react";
 
-const SideBars = ({ todos }) => {
+const SideBars = () => {
   return (
     <div className="lg:w-fit w-full flex flex-col gap-[20px]">
-      {todos.length > 0 ? (
-        todos.map((todo) => (
-          <p
-            key={todo.id}
-            className="border-b border-[#D7D7D7] pb-[20px] pr-[25px] text-white max-w-[305px]"
-          >
-            {todo.title}
+     
+          <p className="border-b border-[#D7D7D7] pb-[20px] pr-[25px] text-white max-w-[305px]">
+            Creating opportunities for Kawasaki
           </p>
-        ))
-      ) : (
-        <p className="text-white opacity-50">No Data Available</p>
-      )}
+          <p className="border-b border-[#D7D7D7] pb-[20px] pr-[25px] text-white max-w-[305px]">
+            Jabil + KSH INFRA
+          </p>
+          <p className="border-b border-[#D7D7D7] pb-[20px] pr-[25px] text-white max-w-[305px]">
+            Another Case Studies Title 3
+          </p>
+          <p className="border-b border-[#D7D7D7] pb-[20px] pr-[25px] text-white max-w-[305px]">
+            Case Studies Title 4
+          </p>
+       
     </div>
   );
 };

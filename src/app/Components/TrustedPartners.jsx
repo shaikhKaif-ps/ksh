@@ -4,14 +4,14 @@ const TrustedPartners = () => {
     <div className='merqueMain h-auto xl-1280:pt-20 pt-16 bg-[url("/tpfiles/marqueBg.webp")] flex-col bg-cover bg-center flex justify-end'>
       
       <div className="max-w-[1250px] w-[90%] mx-auto  pb-9 ">
-        <h2 className="text-left w-full text-xl font-semibold text-[#092241] pb-1 md:pb-2 border-b-2 border-[#FDFDFD]">
+        <h2 className="text-left w-full text-xl font-semibold text-[#092241] pb-1 ">
           Our Trusted Partners
         </h2>
       </div>
 
       <div className="max-w-[1250px] w-[90%] bg-white gap-[26px] flex flex-col merqueSlider border mx-auto h-auto md:h-[415px] md:px-[65px] md:py-[40px]">
         <div className="merqueSlide flex items-center justify-between h-[90px]">
-          <Marquee direction="left" speed={150}>
+          <Marquee direction="left" speed={120}>
             <div className="flex space-x-12 md:space-x-28">
               <img src="/tpfiles/jcb.svg" alt="JCB" className="ml-28" />
               <img src="/tpfiles/envs.svg" alt="JCB" />
@@ -23,7 +23,7 @@ const TrustedPartners = () => {
           </Marquee>
         </div>
         <div className="merqueSlide flex items-center justify-between h-[90px]">
-          <Marquee direction="right" speed={150}>
+          <Marquee direction="right" speed={120}>
             <div className="flex space-x-12 md:space-x-28">
               <img src="/tpfiles/apm.svg" alt="JCB" className="ml-28" />
               <img src="/tpfiles/call.svg" alt="JCB" />
@@ -35,7 +35,7 @@ const TrustedPartners = () => {
           </Marquee>
         </div>
         <div className="merqueSlide flex items-center justify-between h-[90px]">
-          <Marquee direction="left" speed={150}>
+          <Marquee direction="left" speed={120}>
             <div className="flex space-x-12 md:space-x-28">
               <img src="/tpfiles/jcb.svg" alt="JCB" className="ml-28" />
               <img src="/tpfiles/envs.svg" alt="JCB" />
