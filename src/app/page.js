@@ -14,14 +14,14 @@ import Bento from "./Components/Bento";
 export default function Home() {
   return (
     <>
-      {/* <LandingSwiper /> */}
-      <About />
+      <LandingSwiper />
+      {/* <About /> */}
       <Capabilities />
-      {/* <Usp /> */}
+      <Usp />
       {/* <PFetch /> */}
       <Esg />
       <TrustedPartners />
-      {/* <SlideSection /> */}
+      <SlideSection />
       <Bento />
     </>
   );

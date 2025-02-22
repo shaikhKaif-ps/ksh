@@ -158,6 +158,20 @@
   margin-right: auto;
 }
 
+.xyz {
+  /* position: absolute; */
+  margin-right: calc((100vw - 1250px) / 2);
+  /* Aligns with fix12 */
+  max-width: 90%;
+  width: fit-content;
+}
+
+
+/* Carres sec Home page */
+.rigthSectionOfCarrer {
+  display: none;
+}
+
 .firstswbtns {
   position: absolute;
   left: calc((100vw - 1250px) / 2);
@@ -176,12 +190,28 @@
     left: calc((100vw - 90vw) / 2);
     /* Adjusts dynamically on smaller screens */
   }
+
+  .xyz {
+    margin-right: calc((100vw - 90vw) / 2);
+    /* Adjusts dynamically on smaller screens */
+  }
 }
 
 @media (max-width: 768px) {
   .firstswbtns {
     left: 5%;
     /* Prevents misalignment on mobile */
+  }
+
+  .xyz {
+    margin-right: 5%;
+    /* Prevents misalignment on mobile */
+  }
+}
+
+@media (min-width:769px) {
+  .rigthSectionOfCarrer {
+    display: block !important;
   }
 }
 

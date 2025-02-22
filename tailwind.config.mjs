@@ -8,6 +8,7 @@ export default {
   theme: {
     extend: {
       screens: {
+        'xl-768': { min: '767px', max: '1023px' },
         'xl-1024': { min: '1024px', max: '1279px' },
         'xl-1280': { min: '1280px', max: '1365px' },
         'xl-1366': { min: '1366px', max: '1439px' },

@@ -34,9 +34,11 @@ const Usp = () => {
   return (
     <div className="bg-white uspcontainer w-full flex items-center justify-center flex-col">
       <div className="flex flex-col max-w-[100vw] h-fit">
-        <div className="px-[30px] relative z-10 pt-[50px] md:px-[118px] md:pt-[92px] h-fit flex flex-col ">
+        
+        <div className="relative z-10 pt-[50px] max-w-[1250px] mx-auto w-full md:pt-[92px] h-fit flex flex-col ">
           <LineHead heading={"10 USPs Inside Our Parks"} />
         </div>
+
         <div className="flex md:flex-row flex-col md:p-0 p-5 max-h-fit">
           <div className="flex items-end justify-center mt-0 max-h-fit">
             {/* I want the height to be full its like height fit instaed */}

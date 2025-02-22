@@ -32,25 +32,28 @@ const SlideSection = () => {
   };
   return (
     <div
-      className="h-[690px] flex overflow-hidden"
+      className="h-auto lg:h-[690px] flex overflow-hidden"
       style={{
         background: "linear-gradient(to bottom, #ffffff 50%, #092241 50%)",
       }}
     >
      
 
-        <div className="relative h-[596px] flex  overflow-hidden border-white border-2 w-[100%] mr-[340px]">
-          {/* Left Section */}
-          <div className="leftCon bg-[#141D28] w-[60%] xl-1440:pl-[90px] xl-1536:pl-[138px] xl-1600:pl-[170px]">
+      <div className="relative h-fit lg:h-[596px] flex lg:flex-row flex-col overflow-hidden  w-[100%] xl-1920:mr-[17.4%] xl-1600:mr-[172px] xl-1536:mr-[140px] xl-1440:mr-[94px] xl-1366:mr-[66px] xl-1280:mr-[62px] xl-1024:mr-[50px] ">
+        
+
+        {/* Left Section */}
+        <div className="leftCon bg-[#141D28] w-full lg:w-[60%] xl-1920:pl-[21%] xl-1600:pl-[174px] xl-1536:pl-[140px] xl-1440:pl-[90px] xl-1366:pl-[70px] xl-1280:pl-[64px] xl-1024:pl-[50px] xl-768:pl-[40px]">
+          
             {/* Heading & Tabs */}
-            <div className="flex items-center justify-between w-[600px] pt-[70px] border-b-[1px] pb-3 border-[#D7D7D7] border-opacity-50">
-              <h1 className="text-xl text-white font-semibold">Careers at KSH</h1>
+            <div className="px-[5%] md:px-0 md:flex items-center justify-between xl-1024:w-[90%] xl-768:pr-[40px] lg:w-[600px] pt-[70px] border-b-[1px] pb-3 border-[#D7D7D7] border-opacity-50">
+              <h1 className="text-xl pb-4 md:pb-0 text-white font-semibold">Careers at KSH</h1>
               {/* Tabs */}
               <div className="tabs flex gap-4">
                 {tabs.map((tab, index) => (
                   <button
                     key={tab}
-                    className={`px-3 h-[46px] border border-[#D7D7D7] border-opacity-50 text-white rounded-[6px] ${
+                    className={`px-3 h-[46px]  border border-[#D7D7D7] border-opacity-50 text-white rounded-[6px] ${
                       activeIndex === index ? "bg-red-700" : "bg-transparent"
                     }`}
                     onClick={() => handleTabClick(index)}
@@ -59,9 +62,10 @@ const SlideSection = () => {
                   </button>
                 ))}
               </div>
-            </div>
+          </div>
+          
             {/* Animated Content Section */}
-            <div className="relative w-full h-[300px] overflow-hidden">
+            <div className="relative w-full h-[300px] xl-1024:h-[350px] overflow-hidden px-[5%] md:px-0">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeIndex}
@@ -71,10 +75,10 @@ const SlideSection = () => {
                   transition={{ duration: 0.6, ease: "easeInOut" }}
                   className="absolute text-white "
                 >
-                  <h1 className="text-6xl font-medium border-b-[8px] border-[#F7E327] w-fit pb-3 pt-16">
+                  <h1 className="text-3xl md:text-6xl font-medium border-b-[8px] border-[#F7E327] w-fit pb-3 pt-16">
                     {tabs[activeIndex]}
                   </h1>
-                  <p className="w-[60%] pt-12 pb-12 text-base text-[#6C8DAB]">
+                  <p className="md:w-[60%] pt-6 md:pt-12 md:pb-12 text-base text-[#6C8DAB]">
                     Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                     eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
                     enim ad minim veniam, quis nostrum exercitationem ullam
@@ -84,7 +88,7 @@ const SlideSection = () => {
               </AnimatePresence>
             </div>
             {/* Navigation Buttons */}
-            <div className="flex items-center pt-[45px] w-[60%] justify-between pb-[70px]">
+            <div className="flex items-center pt-[45px] px-[5%] md:px-0 md:w-[60%] justify-between pb-[70px]">
               <div className="flex items-center gap-4 text-[#fff] text-[16px]">
                 <img src="/buttonarrows/redarico.svg" alt="" />
                 Explore Careers
@@ -109,10 +113,10 @@ const SlideSection = () => {
                 </button>
               </div>
             </div>
-        </div>
+          </div>
         
           {/* Middle Section (Dynamic Image) */}
-          <div className="middleSection w-[205px] left-[52%] z-10 h-full absolute">
+          <div className="middleSection w-[205px] left-[52%] z-10 h-full absolute lg:inline-block hidden">
             <img
               src={`/Slideimgs/${tabs[activeIndex]}-middle.png`}
               alt={tabs[activeIndex]}
@@ -126,22 +130,22 @@ const SlideSection = () => {
         
 
           {/* Right Section (Swiper) */}
-          <div className="rightCon w-[40%] h-full">
-            <Swiper
-              onSwiper={(swiper) => (swiperRef.current = swiper)}
-              onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-            >
-              {tabs.map((tab) => (
-                <SwiperSlide key={tab}>
-                  <img
-                    src={`/Slideimgs/${tab}.png`}
-                    alt={tab}
-                    className="max-w-none w-full"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-        </div>
+          <div className="rightCon w-full lg:w-[40%] h-full rigthSectionOfCarrer">
+              <Swiper
+                onSwiper={(swiper) => (swiperRef.current = swiper)}
+                onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+              >
+                {tabs.map((tab) => (
+                  <SwiperSlide key={tab}>
+                    <img
+                      src={`/Slideimgs/${tab}.png`}
+                      alt={tab}
+                      className="max-w-none w-full xl-1440:w-auto xl-1366:w-auto xl-1280:w-auto xl-1024:w-auto"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+          </div>
         
         </div>
       </div>
@@ -149,3 +153,4 @@ const SlideSection = () => {
   );
 };
 export default SlideSection;
+// xl-1440:pl-[90px] xl-1536:pl-[138px] xl-1600:pl-[170px]
