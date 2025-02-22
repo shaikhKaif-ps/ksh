@@ -130,7 +130,7 @@ const Parent = ({ initialTodos }) => {
   return (
     <div className="bg-[url(/spotlightbg.webp)] bg-cover bg-no-repeat bg-center">
       <div className="flex items-center justify-center fix12 h-fit">
-        <div className="flex flex-col justify-start max-w-[80vw] w-full py-[75px] h-full">
+        <div className="flex flex-col justify-start w-full py-[75px] h-full">
           <TabLineHead
             acbtn={acbtn}
             setAcBtn={setAcBtn}

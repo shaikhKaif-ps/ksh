@@ -20,7 +20,7 @@ import SideBars from "./SideBars";
 
 const Main = ({ todos, acbtn }) => {
   return (
-    <div className="flex lg:flex-row flex-col-reverse items-end max-w-[80vw] justify-between xl:gap-[205px] lg:gap-[60px] sm:gap-[40px] gap-[20px]">
+    <div className="flex lg:flex-row flex-col-reverse items-end justify-between xl:gap-[205px] lg:gap-[60px] sm:gap-[40px] gap-[20px]">
       <SideBars todos={todos} />
       <Card todos={todos} />
     </div>

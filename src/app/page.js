@@ -15,12 +15,12 @@ export default function Home() {
   return (
     <>
       <LandingSwiper />
-      {/* <About /> */}
+      <About />
       <Capabilities />
-      <Usp />
-      {/* <PFetch /> */}
-      <Esg />
+      {/* <Usp /> */}
+      <PFetch />
       <TrustedPartners />
+      <Esg />
       <SlideSection />
       <Bento />
     </>
