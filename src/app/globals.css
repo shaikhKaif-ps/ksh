@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://use.typekit.net/xua8wlh.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Futura PT";
+  src: url("https://use.typekit.net/xua8wlh.css");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.bgblue {
+  background-color: #092241;
+}
+.bgwh {
+  background-color: #ffffff;
+}
+.fsans-300 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+.fsans-400 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.fsans-500 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+.fsans-600 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.fsans-700 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.flato-300 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+.flato-400 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+.flato-500 {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+.flato-600 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+.flato-700 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+.flato-800 {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+}
+.fpt-300 {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+}
+.fpt-300 {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+}
+.fpt-400 {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 400;
+}
+.fpt-500 {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 500;
+}
+.fpt-600 {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 600;
+}
+.fpt-700 {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 700;
+}
+.fpt-800 {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 800;
+}
+/* //////////////// */
+
+.countersec {
+  transition: background-color 300ms ease-in-out !important;
+}
+.kshmn {
+  max-width: 100vw !important;
+  width: 941px !important;
+  position: relative;
+  z-index: 20 !important;
+}
+.rightsh {
+  position: absolute;
+  width: 630px !important;
+  height: 496px !important;
+  /* left: 100px; */
+  max-width: 60vw;
+  max-height: fit-content;
+}
+/* .tablinehead,
+.tablinehead * {
+  transform-origin: left;
+} */
+.gradinetText {
+  background-image: linear-gradient(to bottom, #ffffff, #163e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+/* @media (min-width: 1440px) {
+  .bodylayout {
+  }
+} */
+@media (max-width: 1365px) {
+  .fix12 {
+    /* max-width: 90% !important; */
+    width: 90%;
+    margin: auto !important;
+  }
+}
+
+.fix12 {
+  max-width: 1250px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
