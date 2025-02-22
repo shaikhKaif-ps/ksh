@@ -39,7 +39,7 @@ const SlideSection = () => {
     >
      
 
-        <div className="relative h-[596px] flex  overflow-hidden border-white border-2 w-[90%]">
+        <div className="relative h-[596px] flex  overflow-hidden border-white border-2 w-[100%] mr-[340px]">
           {/* Left Section */}
           <div className="leftCon bg-[#141D28] w-[60%] xl-1440:pl-[90px] xl-1536:pl-[138px] xl-1600:pl-[170px]">
             {/* Heading & Tabs */}

@@ -15,14 +15,14 @@ export default function Home() {
   return (
     <>
       {/* <LandingSwiper /> */}
-      {/* <About /> */}
-      {/* <Capabilities /> */}
+      <About />
+      <Capabilities />
       {/* <Usp /> */}
       {/* <PFetch /> */}
-      {/* <Esg /> */}
-      {/* <TrustedPartners /> */}
-      <SlideSection />
-      {/* <Bento /> */}
+      <Esg />
+      <TrustedPartners />
+      {/* <SlideSection /> */}
+      <Bento />
     </>
   );
 }

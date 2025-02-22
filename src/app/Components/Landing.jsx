@@ -5,12 +5,10 @@ import Image from "next/image";
 const Landing = () => {
   return (
     <div className="bg-[url(/fistfold.png)] bg-cover bg-center w-screen">
-      <div className="fix12 flex items-center lg:justify-center justify-end h-screen py-[50px] md:py-[92px] w-full xl:gap-[160px] md:gap-[50px] gap-[20px] lg:flex-row flex-col-reverse">
-        <div className="flex flex-col gap-5 md:gap-10 xl:flex-[1] lg:h-[450px] justify-center">
-          <h1 className="fpt-600 md:text-[56px] text-[20px] text-white border-b-[5px] md:border-b-[10px] border-[#F7E327] leading-[150%] md:leading-[105%] pb-5 2xl:text-[70px] lg:whitespace-nowrap">
-            Delivering
-            <br className="lg:flex hidden" /> Grade A Industrial
-            <br className="lg:flex hidden" /> & Logistics Parks
+      <div className="fix12 flex items-center lg:justify-center justify-end h-screen py-[50px] md:py-[92px] xl:gap-[100px] md:gap-[50px] gap-[20px] md:flex-row flex-col-reverse">
+        <div className="flex flex-col flex-1 max-w-full gap-5 lg:gap-10 xl:flex-[1] lg:h-[450px] justify-center">
+          <h1 className="fpt-600 lg:text-[56px] md:text-[32px] text-[20px] text-white border-b-[5px] md:border-b-[10px] border-[#F7E327] leading-[150%] md:leading-[105%] pb-5 2xl:text-[70px]">
+            Delivering Grade A Industrial & Logistics Parks
           </h1>
           <p
             className="fsans-500 text-[14px] md:text-[20px] leading-[26px]"
@@ -46,16 +44,16 @@ const Landing = () => {
             </button>
           </motion.div>
         </div>
-        <div className="xl:min-h-screen flex flex-col justify-end">
+        <div className="xl:min-h-screen flex-1 flex flex-col justify-end">
           <div className="flex items-end justify-end flex-col xl:w-[577px] xl:h-[700px] max-w-full">
             <img
               src="/firstman.png"
-              className="object-cover lg:inline-block hidden"
+              className="object-cover md:inline-block hidden"
               alt="some"
             />
             <img
               src="/landingph.png"
-              className="object-cover lg:hidden inline-block"
+              className="object-cover md:hidden inline-block"
               alt="some"
             />
           </div>

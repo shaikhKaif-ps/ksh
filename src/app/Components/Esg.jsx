@@ -38,15 +38,16 @@ const Esg = () => {
               </div>
             </div>
           </div>
-          <div className="hidden md:w-[60%] md:flex items-center justify-center">
-            <motion.div
+          <div className="hidden md:w-[60%] md:flex items-center justify-center border-2 border-red-400">
+            <video src="/Esg/EsgGif.webm" autoPlay loop muted></video>
+            {/* <motion.div
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ amount: 0.1, once: true }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               <img src="/buttonarrows/arrow.svg" alt="" />
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>

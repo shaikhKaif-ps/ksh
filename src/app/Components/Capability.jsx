@@ -44,7 +44,7 @@ const Capabilities = () => {
   ];
   const [activeTab, setActiveTab] = useState(0); // Track active tab index
   return (
-    <div className="bg-[#092241] pt-[100px]">
+    <div className="bg-[#092241] ">
       <div className="bg-[#092241] md:h-auto h-fit flex items-end justify-end">
 
         <div className="border-white w-full  maxTab xl-1024:ml-[44px] xl-1280:ml-[59px] xl-1366:ml-[60px] xl-1440:ml-[90px] xl-1536:ml-[137px] xl-1600:ml-[175px] xl-1920:ml-[17.5%]  lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden">

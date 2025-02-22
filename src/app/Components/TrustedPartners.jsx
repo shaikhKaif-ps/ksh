@@ -1,15 +1,15 @@
 import Marquee from "react-fast-marquee";
 const TrustedPartners = () => {
   return (
-    <div className='merqueMain h-[500px] lg:h-[700px] bg-[url("/tpfiles/marqueBg.webp")] flex-col bg-cover bg-center flex justify-end'>
+    <div className='merqueMain h-auto xl-1280:pt-20 pt-16 bg-[url("/tpfiles/marqueBg.webp")] flex-col bg-cover bg-center flex justify-end'>
       
-      <div className="max-w-[1250px] w-[90%] mx-auto mt-14 xl:mb-[70px] ">
-        <h2 className="text-left w-full text-xl font-semibold text-[#092241]">
+      <div className="max-w-[1250px] w-[90%] mx-auto  pb-9 ">
+        <h2 className="text-left w-full text-xl font-semibold text-[#092241] pb-1 md:pb-2 border-b-2 border-[#FDFDFD]">
           Our Trusted Partners
         </h2>
       </div>
 
-      <div className="bg-white gap-[26px] flex flex-col merqueSlider fix12 border mx-auto h-auto md:h-[415px] md:px-[65px] md:py-[40px]">
+      <div className="max-w-[1250px] w-[90%] bg-white gap-[26px] flex flex-col merqueSlider border mx-auto h-auto md:h-[415px] md:px-[65px] md:py-[40px]">
         <div className="merqueSlide flex items-center justify-between h-[90px]">
           <Marquee direction="left" speed={150}>
             <div className="flex space-x-12 md:space-x-28">

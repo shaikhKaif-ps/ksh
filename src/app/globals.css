@@ -152,21 +152,38 @@
   .bodylayout {
   }
 } */
-@media (max-width: 1365px) {
-  .fix12 {
-    /* max-width: 90% !important; */
-    width: 90%;
-    margin: auto !important;
-  }
-}
-
 .fix12 {
   max-width: 1250px !important;
   margin-left: auto;
   margin-right: auto;
 }
 
+.firstswbtns {
+  position: absolute;
+  left: calc((100vw - 1250px) / 2);
+  /* Aligns with fix12 */
+  max-width: 90%;
+  width: fit-content;
+}
 
+@media (max-width: 1365px) {
+  .fix12 {
+    width: 90%;
+    margin: auto !important;
+  }
+
+  .firstswbtns {
+    left: calc((100vw - 90vw) / 2);
+    /* Adjusts dynamically on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .firstswbtns {
+    left: 5%;
+    /* Prevents misalignment on mobile */
+  }
+}
 
 @media (max-width:769px) {
   .maxTab {
