@@ -9,8 +9,8 @@ const Esg = () => {
       <div className="WContainer py-[56px] fix12">
         <LineHead heading={"Sustainability"} clr="text-[#092241]" />
         <div className="md:flex md:gap-[20px]">
-          <div className="md:w-[40%] pt-8 lg:pt-[60px]">
-            <h3 className="text-[#092241] text-[60px] font-semibold leading-[105%]">
+          <div className="md:w-[40%] ">
+            <h3 className="text-[#092241] text-3xl md:text-[60px] font-semibold leading-[105%]">
               Safe Guarding the Nature is part of our DNA
             </h3>
             <div className="pt-[32px]">

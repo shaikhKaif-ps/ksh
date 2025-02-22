@@ -16,12 +16,12 @@ export default function Home() {
     <>
       {/* <LandingSwiper /> */}
       {/* <About /> */}
-      <Capabilities />
+      {/* <Capabilities /> */}
       {/* <Usp /> */}
       {/* <PFetch /> */}
       {/* <Esg /> */}
       {/* <TrustedPartners /> */}
-      {/* <SlideSection /> */}
+      <SlideSection />
       {/* <Bento /> */}
     </>
   );

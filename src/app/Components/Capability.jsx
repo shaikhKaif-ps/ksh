@@ -47,7 +47,7 @@ const Capabilities = () => {
     <div className="bg-[#092241] pt-[100px]">
       <div className="bg-[#092241] md:h-auto h-fit flex items-end justify-end">
 
-        <div className="border-white w-full xl-1440:ml-[90px] xl-1536:ml-[137px] xl-1600:ml-[175px] xl-1920:ml-[17.5%] border-2 lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden">
+        <div className="border-white w-full  maxTab xl-1024:ml-[44px] xl-1280:ml-[59px] xl-1366:ml-[60px] xl-1440:ml-[90px] xl-1536:ml-[137px] xl-1600:ml-[175px] xl-1920:ml-[17.5%]  lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden">
           <div className="leftCon flex-1 h-full">
             <div className="pt-[40px]">
               <LineHead heading="Our Capabilities" clr="text-white" />
@@ -71,8 +71,8 @@ const Capabilities = () => {
             </div>
             {/* Animated Content Section */}
             <div className="w-full h-auto pt-[30px]">
-              <div className="w-[516px] ">
-                <h1 className="tabHeading text-[60px] text-white font-medium border-b-[8px] border-[#F7E327] pb-[20px]">
+              <div className="w-[516px] xl-1024:w-[400px]">
+                <h1 className="tabHeading text-4xl md:text-5xl lg:text-[60px] text-white font-medium border-b-[8px] border-[#F7E327] pb-[20px]">
                   {tabs[activeTab].heading}
                 </h1>
                 <p className="tabContent pt-12 text-xl gradinetText">
@@ -81,7 +81,7 @@ const Capabilities = () => {
               </div>
             </div>
             {/* Navigation Buttons */}
-            <div className="flex items-center pt-[35px] xl:w-[60%] md:w-[70%] w-[100%] justify-between">
+            <div className="flex items-center pt-[35px] xl:w-[60%] xl-1024:w-[90%] md:w-[70%] w-[100%] justify-between">
               <div className="flex items-center gap-4 text-[#fff] text-[16px]">
                 <img src="/buttonarrows/redarico.svg" alt="" />
                 Explore Capabilities

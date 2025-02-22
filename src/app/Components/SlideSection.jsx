@@ -37,11 +37,11 @@ const SlideSection = () => {
         background: "linear-gradient(to bottom, #ffffff 50%, #092241 50%)",
       }}
     >
-      {/* <div className="bg-yellow-200 flex items-end justify-end"> */}
+     
 
-        <div className=" mr-[17.1%] bg-[#28141e] h-[596px] flex relative overflow-hidden">
+        <div className="relative h-[596px] flex  overflow-hidden border-white border-2 w-[90%]">
           {/* Left Section */}
-          <div className="leftCon bg-[#141D28] w-[60%] pl-[10%]">
+          <div className="leftCon bg-[#141D28] w-[60%] xl-1440:pl-[90px] xl-1536:pl-[138px] xl-1600:pl-[170px]">
             {/* Heading & Tabs */}
             <div className="flex items-center justify-between w-[600px] pt-[70px] border-b-[1px] pb-3 border-[#D7D7D7] border-opacity-50">
               <h1 className="text-xl text-white font-semibold">Careers at KSH</h1>
@@ -109,17 +109,24 @@ const SlideSection = () => {
                 </button>
               </div>
             </div>
-          </div>
+        </div>
+        
           {/* Middle Section (Dynamic Image) */}
-          <div className="middleSection w-[205px] z-10 h-full">
+          <div className="middleSection w-[205px] left-[52%] z-10 h-full absolute">
             <img
               src={`/Slideimgs/${tabs[activeIndex]}-middle.png`}
               alt={tabs[activeIndex]}
               className="w-full h-auto transition-opacity duration-500 ease-in-out object-cover mt-[125%]"
             />
           </div>
+
+
+
+
+        
+
           {/* Right Section (Swiper) */}
-          <div className="rightCon w-[40%] ml-[-5%] h-full">
+          <div className="rightCon w-[40%] h-full">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)}
               onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
@@ -134,10 +141,11 @@ const SlideSection = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
+        </div>
+        
         </div>
       </div>
-    // </div>
+  
   );
 };
 export default SlideSection;

@@ -116,7 +116,7 @@ const About = () => {
         </div>
       </div>
       <Countersec />
-      <Map />
+      {/* <Map /> */}
     </div>
   );
 };
