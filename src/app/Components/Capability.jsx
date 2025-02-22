@@ -47,7 +47,7 @@ const Capabilities = () => {
     <div className="bg-[#092241] pt-[100px]">
       <div className="bg-[#092241] md:h-auto h-fit flex items-end justify-end">
 
-        <div className="border-white w-full xl-1440:ml-[90px] xl-1536:ml-[137px] xl-1600:ml-[175px] border-2 lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden">
+        <div className="border-white w-full xl-1440:ml-[90px] xl-1536:ml-[137px] xl-1600:ml-[175px] xl-1920:ml-[17.5%] border-2 lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden">
           <div className="leftCon flex-1 h-full">
             <div className="pt-[40px]">
               <LineHead heading="Our Capabilities" clr="text-white" />
