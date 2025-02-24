@@ -10,7 +10,7 @@ const Footer = () => {
             </h2>
           </div>
           <div className="rightCon pt-9 lg:pt-0">
-            <p className="text-base text-[#6C8DAB] pb-[10px]">
+            <p className="text-base text-[#6c8dab80] pb-[10px]">
               Subscribe to our newsletter
             </p>
             <form
@@ -42,13 +42,13 @@ const Footer = () => {
           </div>
         </div>
         {/* Footer middle */}
-        <div className="text-white flex-col gap-[40px] md:flex-row  flex pt-[35px]  md:pt-[60px] pb-[41px] border-[#D7D7D7] border-b-[1px]">
-          <div className="flex-1">
+        <div className="text-white flex-col gap-[40px] md:flex-row flex pt-[35px] w-full justify-between md:pt-[60px] pb-[41px] border-[#D7D7D7] border-b-[1px]">
+          <div className="">
             <img src="/footerIcon.svg" alt="" />
           </div>
-          <div className="flex-1">
+          <div className="">
             <h2 className="pb-5 text-base font-semibold">Quick links</h2>
-            <div className="flex flex-col gap-4 text-[#6C8DAB] text-base font-semibold">
+            <div className="flex flex-col gap-4 text-[#6c8dab80] text-base font-semibold">
               <a href="">Home</a>
               <a href="">About</a>
               <a href="">Insights</a>
@@ -57,9 +57,9 @@ const Footer = () => {
               <a href="">Contact Us</a>
             </div>
           </div>
-          <div className="flex-1">
+          <div className="">
             <h2 className="pb-5 text-base font-semibold">Our Parks</h2>
-            <div className="flex flex-col gap-4 text-[#6C8DAB] text-base font-semibold">
+            <div className="flex flex-col gap-4 text-[#6c8dab80] text-base font-semibold">
               <a href="">Park 01</a>
               <a href="">Park 02</a>
               <a href="">Park 03</a>
@@ -68,9 +68,9 @@ const Footer = () => {
               <a href="">Park 06</a>
             </div>
           </div>
-          <div className="flex-1">
+          <div className="">
             <h2 className="pb-5 text-base font-semibold">Sectors</h2>
-            <div className="flex flex-col gap-4 text-[#6C8DAB] text-base font-semibold">
+            <div className="flex flex-col gap-4 text-[#6c8dab80] text-base font-semibold">
               <a href="">Automotive</a>
               <a href="">ecommerce & Retail</a>
               <a href="">Healthcare</a>
@@ -83,15 +83,15 @@ const Footer = () => {
           </div>
         </div>
         {/* Footer Bottom */}
-        <div className="text-white md:flex items-center justify-between pt-[32px]">
-          <div className="md:w-[30%] lg:flex-1 pt-5 md:pt-0 flex gap-3 ">
+        <div className="text-white flex md:flex-row flex-col lg:gap-0 gap-[20px] lg:flex-nowrap flex-wrap whitespace-nowrap items-start justify-between pt-[32px] ">
+          <div className="pt-5 md:pt-0 flex gap-3">
             <div
               className="iconBox h-11 w-11 rounded-full flex items-center justify-center"
               style={{ backgroundColor: "rgba(255, 255, 255, 0.07)" }}
             >
               <img src="/socials/map.svg" alt="" />
             </div>
-            <div className="text-[#6C8DAB] text-sm font-semibold leading-6">
+            <div className="text-[#6c8dab80] text-sm font-semibold leading-6">
               <p>KSH INFRA,</p>
               <p>
                 Gokhale Sanchit, Office No. 4, <br /> Survey No. 846, Servants
@@ -99,7 +99,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="md:w-[30%] lg:flex-1 pt-5 md:pt-0 flex flex-col gap-5 justify-end">
+          <div className="pt-5 md:pt-0 flex flex-col gap-5">
             <div className="flex items-center gap-3 md:gap-[28px]">
               <div
                 className="iconBox h-11 w-11 rounded-full flex items-center"
@@ -107,7 +107,7 @@ const Footer = () => {
               >
                 <img src="/socials/footerEmail.svg" alt="" />
               </div>
-              <p className="text-[#6C8DAB] text-sm font-semibold leading-6">
+              <p className="text-[#6c8dab80] text-sm font-semibold leading-6">
                 sales@kshinfra.com
               </p>
             </div>
@@ -118,28 +118,44 @@ const Footer = () => {
               >
                 <img src="/socials/Phone.svg" alt="" />
               </div>
-              <p className="text-[#6C8DAB] text-sm font-semibold leading-6">
+              <p className="text-[#6c8dab80] text-sm font-semibold leading-6">
                 1800-212-2030 (Toll-Free)
               </p>
             </div>
           </div>
-          <div className="md:w-[30%] lg:flex-1 flex gap-[30px] pt-12 md:justify-end">
-            <div>
-              <img src="/socials/youTube.svg" alt="" />
+          <div className="flex gap-[30px] items-center justify-center h-fit w-full md:w-auto my-auto lg:pt-0 pt-[50px]">
+            <div className="h-[32px] w-[32px]">
+              <img
+                className="object-cover w-full"
+                src="/socials/youTube.svg"
+                alt=""
+              />
             </div>
-            <div>
-              <img src="/socials/facebook.svg" alt="" />
+            <div className="h-[24px] w-[24px]">
+              <img
+                className="object-cover w-full"
+                src="/socials/facebook.svg"
+                alt=""
+              />
             </div>
-            <div>
-              <img src="/socials/instagram.svg" alt="" />
+            <div className="h-[24px] w-[24px]">
+              <img
+                className="object-cover w-full"
+                src="/socials/instagram.svg"
+                alt=""
+              />
             </div>
-            <div>
-              <img src="/socials/linkedin.svg" alt="" />
+            <div className="h-[24px] w-[24px]">
+              <img
+                className="object-cover w-full"
+                src="/socials/linkedin.svg"
+                alt=""
+              />
             </div>
           </div>
         </div>
         {/* Foooter End */}
-        <div className="pt-[84px] pb-[23px] flex flex-col md:flex-row gap-2 items-center justify-between text-[#6C8DAB] text-sm font-semibold leading-6">
+        <div className="pt-[84px] pb-[23px] flex flex-col md:flex-row gap-2 items-center justify-between text-[#6c8dab80] text-sm font-semibold leading-6">
           <p>© 2024. KSH INFRA. All rights reserved.</p>
           <p>Design & Developed by Parashift technologies</p>
           <p>Privacy Policy | Terms of Use</p>

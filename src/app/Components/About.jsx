@@ -6,6 +6,7 @@ import Esg from "./Esg";
 import ButtomComp from "./ButtonComp";
 import Map from "./Map";
 import LineHead from "./Heading/LineHead";
+import Map1 from "./Map1";
 
 const About = () => {
   return (
@@ -147,7 +148,8 @@ const About = () => {
           </motion.div>
         </div> */}
 
-        <div className="absolute right-0 w-[373px] h-[251px] min-w-[373px] 2xl:flex hidden">
+        <div className="absolute right-[120px] xl-1920:right-[340px]  w-[373px] h-[251px] min-w-[373px] 2xl:flex hidden">
+        {/* <div className="absolute right-0 xl:right-[230px] w-[373px] h-[251px] min-w-[373px] 2xl:flex xl:flex hidden"> */}
           <motion.div
             className="flex justify-end h-[251px] overflow-hidden"
             initial={{ width: 0 }}
@@ -163,7 +165,7 @@ const About = () => {
           </motion.div>
         </div>
 
-        <div className="absolute right-0 w-[298.4px] h-[200.8px] min-w-[298.4px] xl:flex 2xl:hidden hidden">
+        <div className="absolute right-[0px]  w-[298.4px] h-[200.8px] min-w-[298.4px] xl:flex 2xl:hidden hidden">
           <motion.div
             className="flex justify-end h-[200.8px] overflow-hidden"
             initial={{ width: 0 }}
@@ -179,7 +181,7 @@ const About = () => {
           </motion.div>
         </div>
 
-        <div className="absolute right-0 w-[186.5px] h-[125.5px] min-w-[186.5px] lg:flex xl:hidden md:flex hidden">
+        <div className="absolute right-0 w-[186.5px] xl:right-[80px]  h-[125.5px] min-w-[186.5px] lg:flex xl:hidden md:flex hidden">
           <motion.div
             className="flex justify-end h-[125.5px] overflow-hidden"
             initial={{ width: 0 }}
@@ -196,7 +198,7 @@ const About = () => {
         </div>
       </div>
       <Countersec />
-      {/* <Map /> */}
+      <Map1 />
     </div>
   );
 };

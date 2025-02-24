@@ -12,7 +12,7 @@ const TrustedPartners = () => {
       <div className="max-w-[1250px] w-[90%] bg-white gap-[26px] flex flex-col merqueSlider border mx-auto h-auto md:h-[415px] md:px-[65px] md:py-[40px]">
         <div className="merqueSlide flex items-center justify-between h-[90px]">
           <Marquee direction="left" speed={120}>
-            <div className="flex space-x-12 md:space-x-28">
+            <div className="flex space-x-12 md:space-x-12">
               <img src="/tpfiles/jcb.svg" alt="JCB" className="ml-28" />
               <img src="/tpfiles/envs.svg" alt="JCB" />
               <img src="/tpfiles/mgh.svg" alt="JCB" />
@@ -24,7 +24,7 @@ const TrustedPartners = () => {
         </div>
         <div className="merqueSlide flex items-center justify-between h-[90px]">
           <Marquee direction="right" speed={120}>
-            <div className="flex space-x-12 md:space-x-28">
+            <div className="flex space-x-12 md:space-x-12">
               <img src="/tpfiles/apm.svg" alt="JCB" className="ml-28" />
               <img src="/tpfiles/call.svg" alt="JCB" />
               <img src="/tpfiles/kclk.svg" alt="JCB" />
@@ -36,7 +36,7 @@ const TrustedPartners = () => {
         </div>
         <div className="merqueSlide flex items-center justify-between h-[90px]">
           <Marquee direction="left" speed={120}>
-            <div className="flex space-x-12 md:space-x-28">
+            <div className="flex space-x-12 md:space-x-12">
               <img src="/tpfiles/jcb.svg" alt="JCB" className="ml-28" />
               <img src="/tpfiles/envs.svg" alt="JCB" />
               <img src="/tpfiles/mgh.svg" alt="JCB" />

@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <div className="bg-[url(/fistfold.png)] bg-cover bg-center w-screen">
       <div className="fix12 flex items-center lg:justify-center justify-end xl-1920:max-h-fit h-screen py-[50px] md:py-[92px] xl:gap-[100px] md:gap-[50px] gap-[20px] md:flex-row flex-col-reverse">
-        <div className="flex flex-col flex-1 max-w-full gap-5 lg:gap-10 xl:flex-[1] lg:h-[450px] justify-center">
+        <div className="flex border-[2px] border-yellow-400 flex-col flex-1 max-w-full gap-5 lg:gap-10 xl:flex-[1] lg:h-[450px] justify-center">
           <h1 className="fpt-600 lg:text-[56px] md:text-[32px] text-[20px] text-white border-b-[5px] md:border-b-[10px] border-[#F7E327] leading-[150%] md:leading-[105%] pb-5 2xl:text-[70px]">
             Delivering Grade A Industrial & Logistics Parks
           </h1>

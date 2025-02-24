@@ -166,6 +166,17 @@
   width: fit-content;
 }
 
+.tabs {
+  scrollbar-width: none;
+  /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none;
+  /* Hide scrollbar for IE & Edge */
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+}
 
 /* Carres sec Home page */
 .rigthSectionOfCarrer {
@@ -219,5 +230,250 @@
   .maxTab {
     width: 90%;
     margin: auto;
+  }
+}
+
+
+
+/* --- 24 */
+h1,
+h2:not(.kshabtitle),
+h3,
+h4,
+h5,
+h6:not(.linehead-text),
+h1,
+h2:not(.kshabtitle),
+h3,
+h4,
+h5,
+h6:not(.kshabtitle) {
+  font-family: futura-pt, sans-serif !important;
+  font-weight: 600;
+}
+
+.hotspot-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotspot-map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hotspot {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.hotspot:hover {
+  background-color: #F7E327;
+  width: 70px;
+  height: 70px;
+  transform: translate(-50%, -50%);
+}
+
+.hotspot.active {
+  background-color: #F7E327;
+  width: 55px;
+  height: 55px;
+  transform: translate(-50%, -50%);
+}
+
+.hotspot_inn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hotspot_inn::before {
+  transition: all 0.5s;
+  width: 80px;
+  height: 80px;
+  content: '';
+  position: absolute;
+  opacity: 0;
+  top: -13px;
+  left: -13px;
+}
+
+.hotspot_inn::after {
+  content: '';
+  position: absolute;
+  transition: all 0.4s;
+  width: 0px;
+  opacity: 0;
+  height: 0px;
+  background-color: #d7d7d766;
+}
+
+.hotspot.active .hotspot_inn::before {
+  width: 80px;
+  height: 80px;
+  opacity: 1;
+  border: 1px solid #d7d7d766;
+  border-radius: 50%;
+  top: -13px;
+  left: -13px;
+}
+
+
+.hotspot.active .hotspot_inn::after {
+  width: 250px;
+  right: -234px;
+  height: 1px;
+  opacity: 1;
+}
+
+span.park_no {
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Open Sans';
+  display: flex;
+  font-family: Open Sans;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotspot.active span.park_no {
+  font-size: 7px;
+  line-height: 7px;
+  width: 17px;
+  height: 17px;
+}
+
+span.park_name {
+  position: absolute;
+  z-index: -1;
+  bottom: 17px;
+  opacity: 0;
+  font-size: 0px;
+  font-weight: 400;
+  transition: all 0.5s;
+  text-transform: uppercase;
+}
+
+.hotspot:hover span.park_name {
+  opacity: 1;
+  font-size: 11px;
+  bottom: 5px !important;
+}
+
+.hotspot.active span.park_name {
+  opacity: 1;
+  font-size: 7px;
+  bottom: 7px !important;
+}
+
+.hotspot_col_two {
+  /* width: 700px;
+    height: auto;*/
+  position: absolute;
+  /* background: aqua; */
+  top: auto;
+  left: 44%;
+  bottom: 24%;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+
+@media only screen and (min-device-width: 1270px) and (max-device-width: 1280px) {
+  .hotspot_col_two {
+    left: 42%;
+    bottom: 15%;
+  }
+
+  .hotspot.active .hotspot_inn:after {
+    width: 150px;
+    right: -133px;
+  }
+}
+
+@media only screen and (min-device-width: 1281px) and (max-device-width: 1366px) {
+  .hotspot_col_two {
+    left: 41%;
+    bottom: 15%;
+  }
+
+  .hotspot.active .hotspot_inn:after {
+    width: 150px;
+    right: -133px;
+  }
+}
+
+@media only screen and (min-device-width: 1370px) and (max-device-width: 1440px) {
+  .hotspot_col_two {
+    left: 41%;
+    bottom: 16%;
+  }
+
+  .hotspot.active .hotspot_inn:after {
+    width: 150px;
+    right: -133px;
+  }
+}
+
+@media only screen and (min-device-width: 1450px) and (max-device-width: 1536px) {
+  .hotspot_col_two {
+    left: 45%;
+    bottom: 17%;
+  }
+}
+
+@media only screen and (min-device-width: 1540px) and (max-device-width: 1600px) {
+  .hotspot_col_two {
+    left: 45%;
+    bottom: 19%;
+  }
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .hotspot {
+    width: 25px;
+    height: 25px;
+  }
+
+  span.park_no {
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+  }
+
+  .hotspot.active {
+    background-color: #f7e327;
+    width: 45px;
+    height: 45px;
   }
 }

@@ -9,12 +9,12 @@ const ButtomComp = () => {
       transition={{ duration: 1.2, ease: "easeInOut", delay: 0.5 }}
       viewport={{ once: true, amount: 0.1 }}
     >
-      <button className="flex items-center justify-center gap-3">
+      <button className="flex items-center justify-center gap-3 group">
         <Image
           src="/buttonarrows/redarico.svg"
           width={0}
           height={0}
-          className="h-10 w-10 rotate-45 hover:rotate-0 transition-transform duration-300 cursor-pointer"
+          className="group-hover:rotate-0 transition-transform duration-[400ms] ease-in-out  h-10 w-10 rotate-45 hover:rotate-0 cursor-pointer"
           alt="Red Arrow Icon"
         />
         <p className="text-[#092241] fsans-600">Learn More About KSH Infra</p>

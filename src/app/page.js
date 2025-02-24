@@ -9,7 +9,7 @@ import PFetch from "./Components/CNPO/PFetch";
 import LandingSwiper from "./Components/LandingSwiper";
 import Capabilities from "./Components/Capability";
 import SlideSection from "./Components/SlideSection";
-import Bento from "./Components/Bento";
+import BentoSlider from "./Components/BentoSlider";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
       <TrustedPartners />
       <Esg />
       <SlideSection />
-      <Bento />
+      <BentoSlider />
     </>
   );
 }

@@ -16,6 +16,7 @@ export default {
         'xl-1536': { min: '1536px', max: '1599px' },
         'xl-1600': { min: '1600px', max: '1919px' },
         'xl-1920': { min: '1920px' },
+        'min-1440': { min: '1440px' },
       },
       colors: {
         background: "var(--background)",

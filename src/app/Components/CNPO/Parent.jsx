@@ -118,14 +118,98 @@
 
 // export default Parent;
 
-"use client";
+// "use client";
+// import React, { useState } from "react";
+// import Main from "./Main";
+// import TabLineHead from "../Heading/TabLineHead";
 
-import React, { useState } from "react";
+// const Parent = ({ staticData }) => {
+//   // Default to "News" (or choose another as default) so it matches one of the staticData keys.
+//   const [acbtn, setAcBtn] = useState("News");
+
+//   return (
+//     <div className="bg-[url(/spotlightbg.webp)] bg-cover bg-no-repeat bg-center">
+//       <div className="flex items-center justify-center fix12 h-fit">
+//         <div className="flex flex-col justify-start w-full py-[75px] h-full">
+//           <TabLineHead
+//             acbtn={acbtn}
+//             setAcBtn={setAcBtn}
+//             heading={"Spotlight"}
+//           />
+//           <div className="flex flex-col flex-grow min-h-[300px]">
+//             <Main todos={staticData[acbtn] || []} acbtn={acbtn} />
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Parent;
+
+// "use client";
+// import React, { useState, useEffect } from "react";
+// import Main from "./Main";
+// import TabLineHead from "../Heading/TabLineHead";
+
+// const Parent = ({ staticData }) => {
+//   // Active tab state (keys in staticData)
+//   const [acbtn, setAcBtn] = useState("News");
+//   // Get sidebar items for the active tab
+//   const todos = staticData[acbtn] || [];
+//   // Active sidebar state (store the id of the active item)
+//   const [activeSidebar, setActiveSidebar] = useState(
+//     todos[0] ? todos[0].id : null
+//   );
+
+//   // Whenever the tab changes (todos array changes), reset the active sidebar to the first item.
+//   useEffect(() => {
+//     setActiveSidebar(todos[0] ? todos[0].id : null);
+//   }, [todos]);
+
+//   return (
+//     <div className="bg-[url(/spotlightbg.webp)] bg-cover bg-no-repeat bg-center">
+//       <div className="flex items-center justify-center fix12 h-fit">
+//         <div className="flex flex-col justify-start w-full py-[75px] h-full">
+//           <TabLineHead
+//             acbtn={acbtn}
+//             setAcBtn={setAcBtn}
+//             heading={"Spotlight"}
+//           />
+//           <div className="flex flex-col flex-grow min-h-[300px]">
+//             {/* Pass both activeSidebar and setActiveSidebar to Main */}
+//             <Main
+//               todos={todos}
+//               acbtn={acbtn}
+//               activeSidebar={activeSidebar}
+//               setActiveSidebar={setActiveSidebar}
+//             />
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Parent;
+
+//////////////////
+
+"use client";
+import React, { useState, useEffect } from "react";
 import Main from "./Main";
 import TabLineHead from "../Heading/TabLineHead";
 
-const Parent = ({ initialTodos }) => {
+const Parent = ({ staticData }) => {
   const [acbtn, setAcBtn] = useState("News");
+  const todos = staticData[acbtn] || [];
+  const [activeSidebar, setActiveSidebar] = useState(
+    todos[0] ? todos[0].id : null
+  );
+
+  useEffect(() => {
+    setActiveSidebar(todos[0] ? todos[0].id : null);
+  }, [todos]);
 
   return (
     <div className="bg-[url(/spotlightbg.webp)] bg-cover bg-no-repeat bg-center">
@@ -137,7 +221,12 @@ const Parent = ({ initialTodos }) => {
             heading={"Spotlight"}
           />
           <div className="flex flex-col flex-grow min-h-[300px]">
-            <Main todos={initialTodos} acbtn={acbtn} />
+            <Main
+              todos={todos}
+              acbtn={acbtn}
+              activeSidebar={activeSidebar}
+              setActiveSidebar={setActiveSidebar}
+            />
           </div>
         </div>
       </div>

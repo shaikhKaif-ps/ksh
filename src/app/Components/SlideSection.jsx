@@ -53,7 +53,7 @@ const SlideSection = () => {
                 {tabs.map((tab, index) => (
                   <button
                     key={tab}
-                    className={`px-3 h-[46px]  border border-[#D7D7D7] border-opacity-50 text-white rounded-[6px] ${
+                    className={`px-3 h-[46px] border-[#D7D7D7] border-opacity-50 border-[2px] text-white rounded-[10px] ${
                       activeIndex === index ? "bg-red-700" : "bg-transparent"
                     }`}
                     onClick={() => handleTabClick(index)}
@@ -88,11 +88,13 @@ const SlideSection = () => {
               </AnimatePresence>
             </div>
             {/* Navigation Buttons */}
-            <div className="flex items-center pt-[45px] px-[5%] md:px-0 md:w-[60%] justify-between pb-[70px]">
-              <div className="flex items-center gap-4 text-[#fff] text-[16px]">
-                <img src="/buttonarrows/redarico.svg" className="rotate-45 hover:rotate-0 transition-transform duration-300 cursor-pointer" alt="" />
+          <div className="flex items-center pt-[45px] px-[5%] md:px-0 md:w-[60%] justify-between pb-[70px]">
+            
+              <div className="flex items-center gap-4 text-[#fff] text-[16px] group cursor-pointer">
+                <img src="/buttonarrows/redarico.svg" className="group-hover:rotate-0 transition-transform duration-[400ms] ease-in-out  h-10 w-10 rotate-45 hover:rotate-0 cursor-pointer" alt="" />
                 Explore Careers
               </div>
+              
               <div className="flex gap-2 items-center">
                 <button
                   className="w-10 h-10 flex items-center justify-center disabled:opacity-50"

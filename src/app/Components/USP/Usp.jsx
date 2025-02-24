@@ -1,14 +1,39 @@
 "use client";
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation } from "swiper/modules";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import SwiperCard from "./SwiperCard";
 import LineHead from "../Heading/LineHead";
+
 const Usp = () => {
+  const videoRef = useRef(null);
+  const [hasPlayed, setHasPlayed] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasPlayed) {
+          videoRef.current.play();
+          setHasPlayed(true); // Ensure it plays only once
+        }
+      },
+      { threshold: 0.5 } // Adjust threshold for sensitivity
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, [hasPlayed]);
+
   const swcontent = [
     {
       title: "Positioned at a prime location seamless connectivity",
@@ -22,33 +47,35 @@ const Usp = () => {
     },
     {
       title: "Offers competitive pricing models and eco-friendly operations",
-      icon: "/uspicons/icon3.svg",
+      icon: "/uspicons/icon4.svg",
       content: "Lorem ipsum dolor sit amet, consectetur adipisci elit.",
     },
     {
       title: "Positioned at a prime location seamless connectivity",
-      icon: "/uspicons/icon4.svg",
+      icon: "/uspicons/icon1.svg",
       content: "Lorem ipsum dolor sit amet, consectetur adipisci elit.",
     },
   ];
+
   return (
     <div className="bg-white uspcontainer w-full flex items-center justify-center flex-col">
       <div className="flex flex-col max-w-[100vw] h-fit">
-        
-        <div className="relative z-10 pt-[50px] max-w-[1250px] w-[90%] mx-auto  md:pt-[92px] h-fit flex flex-col ">
+        <div className="relative z-10 pt-[50px] max-w-[1250px] w-[90%] mx-auto md:pt-[92px] h-fit flex flex-col">
           <LineHead heading={"10 USPs Inside Our Parks"} />
         </div>
-
-        <div className="flex lg:flex-row flex-col md:p-0 p-5 max-h-fit">
-          <div className="flex items-end justify-center mt-0 max-h-fit">
-            {/* I want the height to be full its like height fit instaed */}
-            {/* <img className="z-0 object-cover" src="/kshhmn.gif" alt="KSH Man" /> */}
-            <img className="z-0 object-cover" src="/OurCapabilities/uspDummy.png" alt="KSH Man" />
+        <div className="flex lg:flex-row flex-col-reverse md:p-0 px-5 pt-0 max-h-fit lg:gap-0 gap-5">
+          <div className="flex items-end justify-center mt-0">
+            <video
+              ref={videoRef}
+              src="/uspicons/USP.mp4"
+              className="min-w-full min-h-full"
+              muted
+            ></video>
           </div>
-          <div className="lg:w-[60%] flex flex-col w-full h-fit max-w-full justify-center items-start  gap-[33px] pb-[110px]">
-            <div className="flex sm:flex-row flex-col sm:items-center items-start justify-start gap-[20px] sm:gap-[92px] xl-1024:mr-[50px] xl-1280:mr-[59px] xl-1366:mr-[55px] xl-1600:mr-[171px]      xl-1536:mr-[145px] xl-1440:mr-[90px] xl-1920:mr-[29%]">
+          <div className="lg:w-[60%] xl-768:w-[90%] mx-auto flex flex-col h-fit max-w-full justify-center items-start gap-[33px] lg:pb-[110px]">
+            <div className="flex sm:flex-row flex-col sm:items-center items-start justify-start gap-[20px] sm:gap-[92px] xl-1024:mr-[50px] xl-1280:mr-[59px] xl-1366:mr-[55px] xl-1600:mr-[171px] xl-1536:mr-[145px] xl-1440:mr-[90px] xl-1920:mr-[29%]">
               <p className="fsans-400 text-[18px] leading-[26px] text-[#6C8DAB]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
                 aliquid quas sapiente quaerat eligendi voluptatum necessitatibus
                 natus, incidunt ipsa ipsum, sequi enim asperiores dolorum.
                 Nobis, numquam totam! Ipsam, numquam facilis!
@@ -70,31 +97,22 @@ const Usp = () => {
                 </button>
               </div>
             </div>
-            
             <Swiper
-              slidesPerGroup={1} // Ensures 1 slide per group
+              slidesPerGroup={1}
               className="max-w-full"
               spaceBetween="40px"
               modules={[FreeMode, Navigation]}
               navigation={{ nextEl: ".arrowright", prevEl: ".arrowleft" }}
-              onSwiper={(swiper) => console.log(swiper)}
               breakpoints={{
-                320: {
-                  slidesPerView: 1, // Show 1 slide on small screens
-                  spaceBetween: "20px",
-                },
-                768: {
-                  slidesPerView: 2, // Show 2 slides on medium screens
-                },
-                1366: {
-                  slidesPerView: 2.5, // Show 2.5 slides on large screens
-                },
+                320: { slidesPerView: 1, spaceBetween: "20px" },
+                768: { slidesPerView: 2 },
+                1366: { slidesPerView: 2.5 },
               }}
             >
               {swcontent.map((slide, index) => (
                 <SwiperSlide
                   style={{ maxWidth: "fit-content" }}
-                  key={slide.icon}
+                  key={slide.icon + index}
                 >
                   <SwiperCard
                     content={slide.content}
