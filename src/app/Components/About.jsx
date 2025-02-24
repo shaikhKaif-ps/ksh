@@ -198,7 +198,9 @@ const About = () => {
         </div>
       </div>
       <Countersec />
-      <Map1 />
+      <div className="xl:block hidden">
+        <Map1 />
+      </div>
     </div>
   );
 };

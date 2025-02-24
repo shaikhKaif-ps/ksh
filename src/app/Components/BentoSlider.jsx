@@ -12,7 +12,7 @@ import { useState } from "react";
 const BentoSlider = () => {
   const [sliding, setSliding] = useState(false);
   return (
-    <div className='bg-[#092241] pt-[90px]'>
+    <div className='bg-[#092241]'>
       <div className='h-fit fix12'>
         <div className='flex flex-col gap-[30px] sm:gap-[98px] md:pb-[85px] relative'>
           <BentoHeader />

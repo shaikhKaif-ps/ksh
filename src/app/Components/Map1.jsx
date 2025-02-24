@@ -63,6 +63,7 @@ const Map1 = () => {
       { id: 2, park_no: "01", park_name: "Pune", x: "42%", y: "65%", scale: 1.8, translateX: -6, translateY: -6 },
       { id: 3, park_no: "01", park_name: "Goa", x: "43.5%", y: "68%", scale: 1.8, translateX: -6, translateY: -6 },
     ],
+    mobile: []
   };
 
   // Function to update hotspots based on screen size

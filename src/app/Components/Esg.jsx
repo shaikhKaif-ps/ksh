@@ -19,15 +19,15 @@ const Esg = () => {
                 eiusmod tempor incidunt ut labore et
               </h3>
               <div className="pt-[23px] flex flex-col gap-4 w-[305px]">
-                <p className="text-[16px] leading-[26px] text-[#092241] border-b border-[#D7D7D7] pb-[15px]">
+                <p className="text-[16px] fsans-600 leading-[26px] text-[#092241] border-b border-[#D7D7D7] pb-[15px]">
                   <span className="font-bold text-red-700 pr-[11px]">01</span>{" "}
                   Enviroment
                 </p>
-                <p className="text-[16px] leading-[26px] text-[#092241] border-b border-[#D7D7D7] pb-[15px]">
+                <p className="text-[16px] fsans-600 leading-[26px] text-[#092241] border-b border-[#D7D7D7] pb-[15px]">
                   <span className="font-bold text-red-700 pr-[11px]">02</span>{" "}
                   Social
                 </p>
-                <p className="text-[16px] leading-[26px] text-[#092241] border-b border-[#D7D7D7] pb-[15px]">
+                <p className="text-[16px] fsans-600 leading-[26px] text-[#092241] border-b border-[#D7D7D7] pb-[15px]">
                   <span className="font-bold text-red-700 pr-[11px]">03</span>{" "}
                   Governance
                 </p>
