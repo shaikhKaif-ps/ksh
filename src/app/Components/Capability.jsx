@@ -136,6 +136,7 @@ const swiperRef = useRef(null);
                 <div className="text-base text-[#6C8DAB]">
                   {activeTab + 1} / {tabs.length}
                 </div>
+
                 <button
                   className="rounded-full border border-[#D7D7D7] border-opacity-50 w-10 h-10 flex items-center justify-center disabled:opacity-50"
                    onClick={() => {
@@ -153,28 +154,21 @@ const swiperRef = useRef(null);
           <div className="rightCon flex-1 lg:max-w-[50%]">
              
             {/* Top Image Swiper */}
-            <div className="h-[532px]">
-              
-              <Swiper
-                modules={[EffectFade, Pagination, Navigation]}
-               
-                pagination={{ clickable: true }}
-                navigation
-                className="h-full w-full"
-            
-              >
-                {tabs[activeTab].images.top.map((img, idx) => (
-                  <SwiperSlide key={idx}>
-                    <img
-                      src={img}
-                      alt=""
-                      className="h-full w-full object-cover"
-                    />
-                  </SwiperSlide>
-                ))}
+            <motion.div
+              key={activeTab} // Ensures re-render on tab change
+              initial={{ x: "100%" }} // Start from right
+              animate={{ x: 0 }} // Move to the center
+              exit={{ x: "-100%" }} // Exit towards left
+              transition={{ duration: 1, ease: "easeInOut" }} // Smooth transition
+            >
+                <Swiper modules={[EffectFade, Pagination, Navigation]} pagination={{ clickable: true }} navigation className="h-full w-full topSlider">
+                  {tabs[activeTab].images.top.map((img, idx) => (
+                    <SwiperSlide key={idx}>
+                      <img src={img} alt="" className="h-full w-full object-cover" />
+                    </SwiperSlide>
+                  ))}
                 </Swiper>
-                
-            </div>
+            </motion.div>
             <div className="flex h-full">
               {/* Bottom Left Image Swiper */}
               <div className="w-[50%] h-[236px]">
@@ -182,7 +176,7 @@ const swiperRef = useRef(null);
                   modules={[Pagination, Navigation]}
                   pagination={{ clickable: true }}
                   navigation
-                  className="h-full w-full"
+                  className="h-full w-full bottomLeft"
                 >
                   {tabs[activeTab].images.bottom1.map((img, idx) => (
                     <SwiperSlide key={idx}>
@@ -201,7 +195,7 @@ const swiperRef = useRef(null);
                   modules={[Pagination, Navigation]}
                   pagination={{ clickable: true }}
                   navigation
-                  className="h-full w-full"
+                  className="h-full w-full bottomright"
                 >
                   {tabs[activeTab].images.bottom2.map((img, idx) => (
                     <SwiperSlide key={idx}>
