@@ -50,7 +50,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-center h-[100px] bg-gradient-to-b from-gray-800 to-transparent absolute z-[100000000] max-w-screen ml-auto">
+    <div className="flex items-center justify-center h-[100px] bg-gradient-to-b from-gray-800 to-transparent absolute z-[100000000] w-full  ml-auto">
       <div className="max-w-[1250px] w-[90%] flex justify-between">
 
         <div>
