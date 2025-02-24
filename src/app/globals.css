@@ -246,7 +246,7 @@ h6:not(.linehead-text) {
 
 .hotspot-container {
   width: 100%;
-  height: auto !important;
+  height: fit-content;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -262,10 +262,11 @@ h6:not(.linehead-text) {
 }
 
 .map-image {
+  margin: auto;
   width: 100%;
   height: 100%;
   display: flex;
-  object-fit: cover !important;
+  object-fit: cover;
 }
 
 .hotspot {

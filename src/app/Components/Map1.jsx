@@ -57,7 +57,7 @@ const Map1 = () => {
         id: 1,
         park_no: "05",
         park_name: "Pune",
-        x: "35%",
+        x: "44%",
         y: "66%",
         scale: 2,
         translateX: -8,
@@ -67,8 +67,8 @@ const Map1 = () => {
         id: 2,
         park_no: "01",
         park_name: "Mumbai",
-        x: "37%",
-        y: "71%",
+        x: "46.5%",
+        y: "72.5%",
         scale: 2,
         translateX: -8,
         translateY: -8,
@@ -78,7 +78,7 @@ const Map1 = () => {
         id: 3,
         park_no: "01",
         park_name: "Goa",
-        x: "39.5%",
+        x: "48.5%",
         y: "76%",
         scale: 2,
         translateX: -8,
@@ -176,7 +176,7 @@ const Map1 = () => {
           transition: "transform 1.5s ease-in-out",
         }}
       >
-        <img src="/map.webp" alt="Map" className="map-image" />
+        <img src="/indiamap.webp" alt="Map" className="map-image" />
 
         <div className="hotspot_col_one">
           {hotspots.map((hotspot) =>
@@ -205,6 +205,7 @@ const Map1 = () => {
 
       <div className="hotspot_col_two">
         <motion.div
+          layout
           initial={{ width: "0px", height: "180px" }}
           animate={{
             width: activeHotspot ? "710px" : "0px",
