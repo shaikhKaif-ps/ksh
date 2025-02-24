@@ -127,7 +127,7 @@ const Footer = () => {
             <div className="h-[32px] w-[32px]">
               <img
                 className="object-cover w-full"
-                src="/socials/youTube.svg"
+                src="/socials/youtube.svg"
                 alt=""
               />
             </div>

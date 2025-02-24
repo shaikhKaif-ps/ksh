@@ -104,7 +104,7 @@ const Usp = () => {
               modules={[FreeMode, Navigation]}
               navigation={{ nextEl: ".arrowright", prevEl: ".arrowleft" }}
               breakpoints={{
-                320: { slidesPerView: 1, spaceBetween: "20px" },
+                450: { slidesPerView: 1, spaceBetween: "20px" },
                 768: { slidesPerView: 2 },
                 1366: { slidesPerView: 2.5 },
               }}

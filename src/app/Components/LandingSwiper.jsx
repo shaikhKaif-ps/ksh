@@ -22,11 +22,11 @@ const LandingSwiper = () => {
         <SwiperSlide>
           <VidLand />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <Landing />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
-      <div className="flex gap-10 items-center lg:justify-start justify-between absolute firstswbtns bottom-[20px] lg:bottom-[30px] z-10">
+      {/* <div className="flex gap-10 items-center lg:justify-start justify-between absolute firstswbtns bottom-[20px] lg:bottom-[30px] z-10">
         <p className="text-white opacity-60 fsans-400 text-[16px]">
           Explore the Advantage <br />
           with KSH INFRA
@@ -39,7 +39,7 @@ const LandingSwiper = () => {
             <img className="w-10 h-10" src="/landingl.svg" alt="" />
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

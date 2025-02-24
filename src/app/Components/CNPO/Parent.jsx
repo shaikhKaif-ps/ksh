@@ -201,7 +201,7 @@ import Main from "./Main";
 import TabLineHead from "../Heading/TabLineHead";
 
 const Parent = ({ staticData }) => {
-  const [acbtn, setAcBtn] = useState("News");
+  const [acbtn, setAcBtn] = useState("Case Studies");
   const todos = staticData[acbtn] || [];
   const [activeSidebar, setActiveSidebar] = useState(
     todos[0] ? todos[0].id : null
