@@ -69,7 +69,7 @@ const About = () => {
               transition={{ duration: 1.2, easing: "easeInOut", delay: 0 }}
             >
               <h2
-                className="fsans-700 text-[22px] leading-[130%] 2xl:text-[31px] xl:text-[26px]"
+                className="fsans-700 text-[22px] leading-[130%] 2xl:text-[31px] xl:text-[26px] aboutpioneer"
                 style={{
                   backgroundImage:
                     "linear-gradient(to bottom, #092241, #1757A7)", // Replace with your gradient colors
@@ -149,7 +149,7 @@ const About = () => {
         </div> */}
 
         <div className="absolute right-[120px] xl-1920:right-[340px]  w-[373px] h-[251px] min-w-[373px] 2xl:flex hidden">
-        {/* <div className="absolute right-0 xl:right-[230px] w-[373px] h-[251px] min-w-[373px] 2xl:flex xl:flex hidden"> */}
+          {/* <div className="absolute right-0 xl:right-[230px] w-[373px] h-[251px] min-w-[373px] 2xl:flex xl:flex hidden"> */}
           <motion.div
             className="flex justify-end h-[251px] overflow-hidden"
             initial={{ width: 0 }}

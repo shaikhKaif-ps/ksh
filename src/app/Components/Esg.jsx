@@ -32,10 +32,10 @@ const Esg = () => {
                   Governance
                 </p>
               </div>
-              <div className="flex cursor-pointer group items-center gap-4 pt-[45px] justify-between font-semibold text-[#092241] text-[16px] w-fit">
+              <div className="flex cursor-pointer group hover:translate-x-[5px] transition-transform duration-[400ms] items-center gap-4 pt-[45px] justify-between font-semibold text-[#092241] text-[16px] w-fit">
                 <img
                   src="/buttonarrows/redarico.svg"
-                  className="rotate-45 group-hover:rotate-0 transition-transform duration-[400ms] ease-in-out cursor-pointer"
+                  className="rotate-45 group-hover:rotate-0 group-hover:scale-[120%] transition-transform duration-[400ms] ease-in-out cursor-pointer"
                   alt=""
                 />
                 Explore More
@@ -43,7 +43,12 @@ const Esg = () => {
             </div>
           </div>
           <div className="hidden lg:w-[60%] md:flex items-center justify-center">
-            <video src="/Esg/KSH Final Sustainability.mp4" autoPlay loop muted></video>
+            <video
+              src="/Esg/KSH Final Sustainability.mp4"
+              autoPlay
+              loop
+              muted
+            ></video>
           </div>
         </div>
       </div>
