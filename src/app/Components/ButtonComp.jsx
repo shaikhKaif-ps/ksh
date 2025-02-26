@@ -6,7 +6,7 @@ const ButtomComp = () => {
     <motion.div
       initial={{ y: 100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1.2, ease: "easeInOut", delay: 0.5 }}
+      transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1], delay: 0.5 }}
       viewport={{ once: true, amount: 0.1 }}
     >
       <button className="flex items-center justify-center hover:translate-x-[5px] transition-transform duration-[400ms] gap-3 group">

@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import SwiperCard from "./SwiperCard";
 import LineHead from "../Heading/LineHead";
-
+import { motion } from "framer-motion";
 const Usp = () => {
   const videoRef = useRef(null);
   const [hasPlayed, setHasPlayed] = useState(false);
@@ -73,7 +73,7 @@ const Usp = () => {
             ></video>
           </div>
           <div className="lg:w-[60%] xl-768:w-[90%] mx-auto flex flex-col h-fit max-w-full justify-center items-start gap-[33px] lg:pb-[110px]">
-            <div className="flex sm:flex-row flex-col sm:items-center items-start justify-start gap-[20px] sm:gap-[92px] xl-1024:mr-[50px] xl-1280:mr-[59px] xl-1366:mr-[55px] xl-1600:mr-[171px] xl-1536:mr-[145px] xl-1440:mr-[90px] xl-1920:mr-[29%]">
+            <motion.div className="flex sm:flex-row flex-col sm:items-center items-start justify-start gap-[20px] sm:gap-[92px] xl-1024:mr-[50px] xl-1280:mr-[59px] xl-1366:mr-[55px] xl-1600:mr-[171px] xl-1536:mr-[145px] xl-1440:mr-[90px] xl-1920:mr-[29%]">
               <p className="fsans-400 text-[18px] leading-[26px] text-[#6C8DAB]">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
                 aliquid quas sapiente quaerat eligendi voluptatum necessitatibus
@@ -96,29 +96,32 @@ const Usp = () => {
                   />
                 </button>
               </div>
-            </div>
+            </motion.div>
             <Swiper
               slidesPerGroup={1}
-              className="max-w-full"
-              spaceBetween="40px"
+              className="max-w-full customsw"
+              spaceBetween={20} // Maintain good spacing
               modules={[FreeMode, Navigation]}
+              loopAdditionalSlides={2}
+              freeMode={false}
+              centeredSlides={false}
               navigation={{ nextEl: ".arrowright", prevEl: ".arrowleft" }}
+              speed={500}
+              loop={true} // Prevents right alignment issue
               breakpoints={{
-                450: { slidesPerView: 1, spaceBetween: "20px" },
-                768: { slidesPerView: 2 },
-                1366: { slidesPerView: 2.5 },
+                450: { slidesPerView: 1, spaceBetween: 10 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                1366: { slidesPerView: 2.5, spaceBetween: 40 }, // Ensures 2.5 slides at a time
               }}
             >
               {swcontent.map((slide, index) => (
-                <SwiperSlide
-                  style={{ maxWidth: "fit-content" }}
-                  key={slide.icon + index}
-                >
+                <SwiperSlide key={slide.icon + index}>
                   <SwiperCard
                     content={slide.content}
                     title={slide.title}
                     icon={slide.icon}
                   />
+                  {/* Add empty slides if needed */}
                 </SwiperSlide>
               ))}
             </Swiper>

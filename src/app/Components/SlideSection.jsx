@@ -51,7 +51,9 @@ const SlideSection = () => {
                 <button
                   key={tab}
                   className={`px-3 h-[46px] border-[#D7D7D7] border-opacity-50 border-[2px] text-white rounded-[10px] ${
-                    activeIndex === index ? "bg-red-700" : "bg-transparent"
+                    activeIndex === index
+                      ? "bg-red-700 border-red-700"
+                      : "bg-transparent"
                   }`}
                   onClick={() => handleTabClick(index)}
                 >
@@ -69,7 +71,7 @@ const SlideSection = () => {
                 initial={{ x: 500, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: -500, opacity: 0 }}
-                transition={{ duration: 0.6, ease: "easeInOut" }}
+                transition={{ duration: 0.6, ease: [0.7, 0, 0.4, 1] }}
                 className="absolute text-white "
               >
                 <h1 className="text-3xl md:text-6xl font-medium border-b-[8px] border-[#F7E327] w-fit pb-3 pt-16">

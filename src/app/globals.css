@@ -332,6 +332,13 @@ h6:not(.linehead-text) {
   transition: background-color 300ms ease-in-out !important;
 }
 
+@media (max-width: 767px) {
+  .countersec {
+    max-height: 150px !important;
+    min-height: 150px !important;
+  }
+}
+
 .kshmn {
   max-width: 100vw !important;
   width: 941px !important;
@@ -447,11 +454,11 @@ h6:not(.linehead-text) {
 
 /* --- 24 */
 h1,
-h2:not(.kshabtitle):not(.tbhead):not(.aboutpioneer),
+h2:not(.kshabtitle):not(.tbhead):not(.aboutpioneer):not(.linehead-text),
 h3:not(.spotlightheaddd),
 h4,
 h5,
-h6:not(.linehead-text) {
+h6 {
   font-family: futura-pt, sans-serif !important;
   font-weight: 600;
 }
@@ -681,4 +688,9 @@ span.park_name {
     width: 45px;
     height: 45px;
   }
+}
+
+/* Hide default scrollbar but keep scrolling functional */
+.customsw {
+  transition-timing-function: cubic-bezier(0.7, 0, 0.4, 1) !important;
 }

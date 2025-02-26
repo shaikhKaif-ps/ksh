@@ -68,12 +68,12 @@ const Capabilities = () => {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { duration: 1.4, ease: "easeInOut" },
+      transition: { duration: 1.4, ease: [0.7, 0, 0.4, 1] },
     },
     exit: {
       opacity: 0,
       x: 50,
-      transition: { duration: 1.4, ease: "easeInOut" },
+      transition: { duration: 1.4, ease: [0.7, 0, 0.4, 1] },
     },
   };
   return (
@@ -113,7 +113,7 @@ const Capabilities = () => {
                 initial={{ x: 500, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 // exit={{ x: -1000, opacity: 0 }}
-                transition={{ duration: 0.6, ease: "easeInOut" }}
+                transition={{ duration: 0.6, ease: [0.7, 0, 0.4, 1] }}
                 className="w-[516px] xl-1024:w-[400px] contentArea"
               >
                 <div className="flex flex-col justify-between min-1440:justify-around xl-1280:h-[350px]  xl-1366:h-[300px]  w-[516px] xl-1024:w-[400px] contentArea xl-1024:h-[350px] h-[250px] xl-768:h-auto xl-768:gap-10 xl-1440:h-[385px] min-1440:h-[390px] ">

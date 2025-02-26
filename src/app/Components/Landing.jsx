@@ -7,12 +7,12 @@
 // //   visible: {
 // //     opacity: 1,
 // //     y: 0,
-// //     transition: { duration: 1.4, ease: "easeInOut" },
+// //     transition: { duration: 1.4, ease: [0.7, 0, 0.4, 1] },
 // //   },
 // //   exit: {
 // //     opacity: 0,
 // //     y: -50,
-// //     transition: { duration: 1.4, ease: "easeInOut" },
+// //     transition: { duration: 1.4, ease: [0.7, 0, 0.4, 1] },
 // //   },
 // // };
 
@@ -103,12 +103,12 @@
 //   visible: {
 //     opacity: 1,
 //     y: 0,
-//     transition: { duration: 1.4, ease: "easeInOut" },
+//     transition: { duration: 1.4, ease: [0.7, 0, 0.4, 1] },
 //   },
 //   exit: {
 //     opacity: 0,
 //     y: -50,
-//     transition: { duration: 1.4, ease: "easeInOut" },
+//     transition: { duration: 1.4, ease: [0.7, 0, 0.4, 1] },
 //   },
 // };
 
@@ -221,29 +221,29 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const fadeIn = {
-  hidden: { opacity: 0, y: 50 },
+  hidden: { opacity: 0, y: 100 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 1.4, ease: "easeInOut", delay: 0.3 },
+    transition: { duration: 1.4, ease: [0.7, 0, 0.4, 1] },
   },
   exit: {
     opacity: 0,
-    y: -50,
-    transition: { duration: 1.4, ease: "easeInOut", delay: 0.3 },
+    y: -100,
+    transition: { duration: 1.4, ease: [0.7, 0, 0.4, 1] },
   },
 };
 const fadeIn2 = {
-  hidden: { opacity: 0, x: -50 },
+  hidden: { opacity: 0, x: -100 },
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 1.4, ease: "easeInOut", delay: 0.3 },
+    transition: { duration: 1.4, ease: [0.7, 0, 0.4, 1] },
   },
   exit: {
     opacity: 0,
-    x: 50,
-    transition: { duration: 1.4, ease: "easeInOut", delay: 0.3 },
+    x: 100,
+    transition: { duration: 1.4, ease: [0.7, 0, 0.4, 1] },
   },
 };
 
@@ -258,20 +258,21 @@ const Landing = ({ isActive }) => {
       <div className="fix12 flex items-center lg:justify-center justify-end xl-1920:max-h-fit h-screen py-[50px] md:py-[92px] xl:gap-[100px] md:gap-[50px] gap-[20px] md:flex-row flex-col-reverse">
         {/* Left Side Content */}
         <motion.div
-          className="flex flex-col flex-1 max-w-full gap-5 lg:gap-10 xl:flex-[1] lg:h-[450px] justify-center"
+          className="flex flex-col flex-1 max-w-full gap-5 xl:gap-10 xl:flex-[1] lg:h-[450px] justify-center"
           variants={fadeIn2}
           initial="hidden"
           animate={isActive ? "visible" : "hidden"}
           exit="exit"
         >
           <motion.h1
-            className="fpt-600 lg:text-[56px] md:text-[32px] text-[20px] text-white border-b-[5px] md:border-b-[10px] border-[#F7E327] leading-[150%] md:leading-[105%] pb-5 2xl:text-[70px]"
+            className="fpt-600 xl:text-[56px] lg:text-[40px] md:text-[32px] text-[20px] text-white border-b-[5px] md:border-b-[10px] border-[#F7E327] leading-[150%] md:leading-[105%] pb-5 2xl:text-[70px]"
             variants={fadeIn2}
           >
-            Delivering Grade A Industrial & Logistics Parks
+            Delivering <br />
+            Grade A Industrial <br />& Logistics Parks
           </motion.h1>
           <motion.p
-            className="fsans-500 text-[14px] md:text-[20px] leading-[26px]"
+            className="fsans-500 text-[14px] lg:text-[18px] xl:text-[20px] leading-[26px]"
             style={{
               backgroundImage: "linear-gradient(to bottom, #ffffff, #163E71)",
               WebkitBackgroundClip: "text",
@@ -303,14 +304,14 @@ const Landing = ({ isActive }) => {
 
         {/* Right Side Image */}
         <motion.div
-          className="xl:min-h-screen flex-1 flex flex-col justify-end"
+          className="md:min-h-screen flex-1 flex flex-col justify-end items-end"
           variants={fadeIn}
           initial="hidden"
           animate={isActive ? "visible" : "hidden"}
           exit="exit"
         >
           <motion.div
-            className="flex items-end justify-end flex-col xl:w-[577px] xl:h-[700px] max-w-full"
+            className="flex items-end justify-end flex-col xl:w-[490.45px] xl:h-[595px] max-w-full"
             variants={fadeIn}
           >
             {/* Desktop Image */}

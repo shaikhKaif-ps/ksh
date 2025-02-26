@@ -90,7 +90,7 @@ const Map = () => {
         }}
         transition={{
           duration: 1.4,
-          ease: "easeInOut",
+          ease: [0.7, 0, 0.4, 1],
         }}
       >
         <img
@@ -156,7 +156,7 @@ const Map = () => {
               }}
               transition={{
                 duration: 1.3,
-                ease: "easeInOut",
+                ease: [0.7, 0, 0.4, 1],
                 delay: 0.4, // Add a delay to the slider growth animation
               }}
               onClick={(e) => e.stopPropagation()}
@@ -188,7 +188,7 @@ const Map = () => {
                         <motion.div
                           initial={{ y: 20 }}
                           whileInView={{ y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeInOut" }}
+                          transition={{ duration: 0.5, ease: [0.7, 0, 0.4, 1] }}
                         >
                           <img
                             src={img}
@@ -213,7 +213,7 @@ const Map = () => {
               initial={{ width: 0 }} // Line width starts at 0
               animate={{ width: "710px" }} // Animate the width of the line
               exit={{ width: 0 }} // Shrink the line when exiting
-              transition={{ duration: 0.3, ease: "easeInOut" }}
+              transition={{ duration: 0.3, ease: [0.7, 0, 0.4, 1] }}
             />
           </motion.div>
         )}

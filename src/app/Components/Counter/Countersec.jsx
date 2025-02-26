@@ -49,17 +49,17 @@ const StatsSection = () => {
   const numberOfClientsData = useAnimatedNumber(numberOfClients);
 
   return (
-    <div className="grid md:grid-cols-5 grid-cols-2 relative z-0">
+    <div className="grid md:grid-cols-5 grid-cols-2 relative z-0 xl:pb-[50px] pb-0">
       <motion.div
         ref={parksTotalData.ref}
-        className="flex countersec flex-col items-left text-left px-[30px] xl:px-[42px] group hover:bg-[#E30613] hover:text-white gap-[12px] 2xl:py-[75px] xl:py-[66px] lg:py-[56px] py-[36px] border-t border-r border-gray-300"
+        className="flex countersec flex-col items-left text-left px-[30px] xl:px-[42px] group hover:bg-[#E30613] hover:text-white gap-[12px] 2xl:py-[75px] xl:py-[66px] lg:py-[56px] py-[30px] border-t border-r border-gray-300"
         // initial={{ y: 200, opacity: 0 }}
         // whileInView={{ y: 0, opacity: 1 }}
         // viewport={{ once: true, amount: 0.1 }}
-        // transition={{ duration: 1.5, ease: "easeInOut" }}
+        // transition={{ duration: 1.5, ease: [0.7, 0, 0.4, 1] }}
       >
         <p className="2xl:text-[20px] xl:text-[18px] lg:text-[16px] text-[14px] fsans-600 text-[#092241] group-hover:text-white">
-          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] md:text-[24px] text-[20px] leading-[111%]">
+          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] text-[20px] leading-[111%]">
             0{parksTotalData.displayValue}
           </span>{" "}
           Parks
@@ -71,17 +71,17 @@ const StatsSection = () => {
 
       <motion.div
         ref={approxPortfolioData.ref}
-        className="flex fsans-600 flex-col items-left text-left countersec px-[30px] xl:px-[42px] group hover:bg-[#E30613] hover:text-white gap-[12px] 2xl:py-[75px] xl:py-[66px] lg:py-[56px] py-[36px] border-t border-r border-b sm:border-b-[0px] border-gray-300"
+        className="flex fsans-600 flex-col items-left text-left countersec px-[30px] xl:px-[42px] group hover:bg-[#E30613] hover:text-white gap-[12px] 2xl:py-[75px] xl:py-[66px] lg:py-[56px] py-[30px] border-t border-r border-b-0 md:border-b border-gray-300"
         // initial={{ y: 200, opacity: 0 }}
         // whileInView={{ y: 0, opacity: 1 }}
         // viewport={{ once: true, amount: 0.1 }}
-        // transition={{ duration: 1.5, ease: "easeInOut" }}
+        // transition={{ duration: 1.5, ease: [0.7, 0, 0.4, 1] }}
       >
         <p className="2xl:text-[20px] xl:text-[18px] lg:text-[16px] text-[14px] fsans-600 text-[#092241] group-hover:text-white">
-          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] md:text-[24px] text-[20px] leading-[111%]">
+          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] text-[20px] leading-[111%]">
             {approxPortfolioData.displayValue}
           </span>
-          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] md:text-[24px] text-[20px] leading-[111%]">
+          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] text-[20px] leading-[111%]">
             MN
           </span>
           SQ.FT.
@@ -93,14 +93,14 @@ const StatsSection = () => {
       {/*  */}
       <motion.div
         ref={totalInvestmentsData.ref}
-        className="flex flex-col items-left text-left countersec px-[30px] xl:px-[42px] group hover:bg-[#E30613] hover:text-white gap-[12px] 2xl:py-[75px] xl:py-[66px] lg:py-[56px] py-[36px] border-t border-r border-gray-300"
+        className="flex flex-col items-left text-left countersec px-[30px] xl:px-[42px] group hover:bg-[#E30613] hover:text-white gap-[12px] 2xl:py-[75px] xl:py-[66px] lg:py-[56px] py-[30px] border-t border-r border-gray-300"
         // initial={{ y: 200, opacity: 0 }}
         // whileInView={{ y: 0, opacity: 1 }}
         // viewport={{ once: true, amount: 0.1 }}
-        // transition={{ duration: 1.5, ease: "easeInOut" }}
+        // transition={{ duration: 1.5, ease: [0.7, 0, 0.4, 1] }}
       >
         <p className="2xl:text-[20px] xl:text-[18px] lg:text-[16px] text-[14px] fsans-600 text-[#092241] group-hover:text-white">
-          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] md:text-[24px] text-[20px] leading-[111%]">
+          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] text-[20px] leading-[111%]">
             {totalInvestmentsData.displayValue}+
           </span>{" "}
           CR
@@ -112,17 +112,17 @@ const StatsSection = () => {
 
       <motion.div
         ref={equityDeploymentData.ref}
-        className="flex flex-col items-left text-left countersec px-[30px] xl:px-[42px] group hover:bg-[#E30613] hover:text-white gap-[12px] 2xl:py-[75px] xl:py-[66px] lg:py-[56px] py-[36px] border-t border-r border-gray-300"
+        className="md:border-b-0 border-b flex flex-col items-left text-left countersec px-[30px] xl:px-[42px] group hover:bg-[#E30613] hover:text-white gap-[12px] 2xl:py-[75px] xl:py-[66px] md:border-t lg:py-[56px] py-[30px] border-t border-r border-gray-300"
         // initial={{ y: 200, opacity: 0 }}
         // whileInView={{ y: 0, opacity: 1 }}
         // viewport={{ once: true, amount: 0.1 }}
-        // transition={{ duration: 1.5, ease: "easeInOut" }}
+        // transition={{ duration: 1.5, ease: [0.7, 0, 0.4, 1] }}
       >
         <p className="fsans-600 text-[#092241] group-hover:text-white">
-          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] md:text-[24px] text-[20px] leading-[111%]">
+          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] text-[20px] leading-[111%]">
             {equityDeploymentData.displayValue}
           </span>
-          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] md:text-[24px] text-[20px] leading-[111%]">
+          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] text-[20px] leading-[111%]">
             +
           </span>
         </p>
@@ -133,17 +133,17 @@ const StatsSection = () => {
 
       <motion.div
         ref={numberOfClientsData.ref}
-        className="flex flex-col items-left text-left countersec px-[30px] xl:px-[42px] group hover:bg-[#E30613] hover:text-white gap-[12px] 2xl:py-[75px] xl:py-[66px] lg:py-[56px] py-[36px] border-t sm:border-r-0 border-r sm:border-b-0 border-b border-gray-300"
+        className="flex flex-col items-left text-left countersec px-[30px] xl:px-[42px] group hover:bg-[#E30613] hover:text-white gap-[12px] 2xl:py-[75px] xl:py-[66px] lg:py-[56px] py-[30px] border-t sm:border-r-0 border-r sm:border-b-0 border-b border-gray-300"
         // initial={{ y: 200, opacity: 0 }}
         // whileInView={{ y: 0, opacity: 1 }}
         // viewport={{ once: true, amount: 0.1 }}
-        // transition={{ duration: 1.5, ease: "easeInOut" }}
+        // transition={{ duration: 1.5, ease: [0.7, 0, 0.4, 1] }}
       >
         <p className="text-[#092241] group-hover:text-white">
-          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] md:text-[24px] text-[20px] leading-[111%]">
+          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] text-[20px] leading-[111%]">
             {numberOfClientsData.displayValue}
           </span>
-          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] md:text-[24px] text-[20px] leading-[111%]">
+          <span className="fsans-600 2xl:text-[40px] xl:text-[32px] lg:text-[28px] text-[20px] leading-[111%]">
             +
           </span>
         </p>

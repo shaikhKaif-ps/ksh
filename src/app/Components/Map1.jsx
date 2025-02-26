@@ -217,7 +217,7 @@ const Map1 = () => {
               height: activeHotspot ? "385px" : "180px",
               transformOrigin: "0% 50%",
             }}
-            transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
+            transition={{ duration: 1, ease: [0.7, 0, 0.4, 1], delay: 0.2 }}
             className="overflow-hidden flex flex-col items-center relative"
           >
             {/* Cross Button Container */}

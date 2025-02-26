@@ -11,15 +11,15 @@ const MapLineHead = ({ heading, acbtn, setAcBtn }) => {
   ];
 
   return (
-    <motion.div
-      initial={{ width: 0 }}
-      whileInView={{ width: "100%" }}
-      viewport={{ once: true, amount: 0.1 }}
-      transition={{ duration: 2, ease: "easeInOut" }}
-      className="pb-[20px] border-b lg:mb-[66px] mb-[36px] border-[#D7D7D7] border-opacity-[34%] overflow-hidden whitespace-nowrap w-[100%] tablinehead"
-    >
-      <div className="flex items-center justify-between w-[100%] lg:gap-0 gap-[20px]">
-        <h2 className="leading-[26px] text-[20px] fsans-600 text-[#ffffff]">
+    <div className=" w-full border-b lg:mb-[66px] mb-[36px] tablinehead">
+      <motion.div
+        className="flex pb-[20px] border-[#D7D7D7] border-opacity-[34%] overflow-hidden whitespace-nowrap  items-center justify-between w-[100%] lg:gap-0 gap-[20px]"
+        initial={{ width: 0 }}
+        whileInView={{ width: "100%" }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
+      >
+        <h2 className="leading-[26px] text-[20px] fsans-600 text-[#ffffff] tbhead">
           {heading}
         </h2>
         <div
@@ -41,8 +41,8 @@ const MapLineHead = ({ heading, acbtn, setAcBtn }) => {
             </button>
           ))}
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 

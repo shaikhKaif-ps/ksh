@@ -26,7 +26,7 @@
 //           width: isOpen || isHovered ? 80 : 64,
 //           height: isOpen || isHovered ? 80 : 64,
 //         }}
-//         transition={{ duration: 0.3, ease: "easeInOut" }}
+//         transition={{ duration: 0.3, ease: [0.7, 0, 0.4, 1] }}
 //       >
 //         <span className="text-black">05</span>
 
@@ -36,7 +36,7 @@
 //           animate={
 //             isHovered || isOpen ? { opacity: 1, y: 30 } : { opacity: 0, y: 0 }
 //           }
-//           transition={{ duration: 0.3, ease: "easeInOut" }}
+//           transition={{ duration: 0.3, ease: [0.7, 0, 0.4, 1] }}
 //           className="absolute text-black text-sm"
 //         >
 //           PUNE
@@ -57,7 +57,7 @@
 //       <motion.div
 //         initial={{ width: "0px" }}
 //         animate={{ width: isOpen ? "710px" : "0px" }}
-//         transition={{ duration: 1.2, ease: "easeInOut" }}
+//         transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1] }}
 //         className="overflow-hidden bg-white shadow-lg flex flex-col items-center"
 //       >
 //         {/* Cross Button Container */}
@@ -140,7 +140,7 @@ const InteractiveSlider = () => {
           outline:
             isOpen || isHovered ? "24px solid red" : "0px solid transparent",
         }}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
+        transition={{ duration: 0.3, ease: [0.7, 0, 0.4, 1] }}
       >
         <span className="text-black">05</span>
 
@@ -150,7 +150,7 @@ const InteractiveSlider = () => {
           animate={
             isHovered || isOpen ? { opacity: 1, y: 25 } : { opacity: 0, y: 0 }
           }
-          transition={{ duration: 0.3, ease: "easeInOut" }}
+          transition={{ duration: 0.3, ease: [0.7, 0, 0.4, 1] }}
           className="absolute text-black text-sm"
         >
           PUNE
@@ -171,7 +171,7 @@ const InteractiveSlider = () => {
       <motion.div
         initial={{ width: "0px" }}
         animate={{ width: isOpen ? "710px" : "0px" }}
-        transition={{ duration: 1.2, ease: "easeInOut" }}
+        transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1] }}
         className="overflow-hidden flex flex-col items-center"
       >
         {/* Cross Button Container */}

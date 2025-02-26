@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div className="w-full max-h-fit relative">
       <div className="fix12 py-[50px] md:py-[92px] h-full flex flex-col justify-end">
-        <LineHead heading={"About us"} clr="text-[#092241]" />
+        <LineHead heading={"About us"} clr="text-[#092241]" bclr="#D7D7D7" />
         <div className="flex md:flex-row flex-col justify-start items-start gap-[36px] sm:gap-[44px] md:gap-[84px]">
           <div
             className="hidden xl:flex"
@@ -26,7 +26,7 @@ const About = () => {
               initial={{ width: 0 }}
               whileInView={{ width: "502px" }} // Ensures width animation smoothly
               viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: 2, ease: "easeInOut", delay: 0 }}
+              transition={{ duration: 2, ease: [0.7, 0, 0.4, 1], delay: 0 }}
               style={{
                 width: "502px",
                 overflow: "hidden",
@@ -52,7 +52,7 @@ const About = () => {
               initial={{ x: "-99.99999%", opacity: 0 }}
               whileInView={{ x: "0", opacity: 1 }}
               viewport={{ amount: 0.01, once: true }}
-              transition={{ duration: 1.5, ease: "easeInOut" }}
+              transition={{ duration: 1.5, ease: [0.7, 0, 0.4, 1] }}
               className="w-full max-w-full"
             >
               <img src="/firstinfra.jpg" alt="Warehouse" className="w-full" />
@@ -66,7 +66,7 @@ const About = () => {
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: 1.2, easing: "easeInOut", delay: 0 }}
+              transition={{ duration: 1.2, easing: [0.7, 0, 0.4, 1], delay: 0 }}
             >
               <h2
                 className="fsans-700 text-[22px] leading-[130%] 2xl:text-[31px] xl:text-[26px] aboutpioneer"
@@ -88,7 +88,11 @@ const About = () => {
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: 1.2, easing: "easeInOut", delay: 0.25 }}
+              transition={{
+                duration: 1.2,
+                easing: [0.7, 0, 0.4, 1],
+                delay: 0.25,
+              }}
             >
               <p className="flato-400 text-[18px] leading-[26px] text-[#6C8DAB]">
                 Setting benchmarks in delivering
@@ -106,7 +110,7 @@ const About = () => {
             initial={{ width: 0 }}
             whileInView={{ width: "373px" }}
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 2, ease: "easeInOut", delay: 0 }}
+            transition={{ duration: 2, ease: [0.7, 0, 0.4, 1], delay: 0 }}
           >
             <img
               src="/truckinfra.jpg"
@@ -122,7 +126,7 @@ const About = () => {
             initial={{ width: 0 }}
             whileInView={{ width: "298.4px" }}
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 2, ease: "easeInOut", delay: 0 }}
+            transition={{ duration: 2, ease: [0.7, 0, 0.4, 1], delay: 0 }}
           >
             <img
               src="/truckinfra.jpg"
@@ -138,7 +142,7 @@ const About = () => {
             initial={{ width: 0 }}
             whileInView={{ width: "186.5px" }}
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 2, ease: "easeInOut", delay: 0 }}
+            transition={{ duration: 2, ease: [0.7, 0, 0.4, 1], delay: 0 }}
           >
             <img
               src="/truckinfra.jpg"
@@ -155,7 +159,7 @@ const About = () => {
             initial={{ width: 0 }}
             whileInView={{ width: "373px" }}
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 2, ease: "easeInOut", delay: 0 }}
+            transition={{ duration: 2, ease: [0.7, 0, 0.4, 1], delay: 0 }}
           >
             <img
               src="/truckinfra.jpg"
@@ -171,7 +175,7 @@ const About = () => {
             initial={{ width: 0 }}
             whileInView={{ width: "298.4px" }}
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 2, ease: "easeInOut", delay: 0 }}
+            transition={{ duration: 2, ease: [0.7, 0, 0.4, 1], delay: 0 }}
           >
             <img
               src="/truckinfra.jpg"
@@ -187,7 +191,7 @@ const About = () => {
             initial={{ width: 0 }}
             whileInView={{ width: "186.5px" }}
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 2, ease: "easeInOut", delay: 0 }}
+            transition={{ duration: 2, ease: [0.7, 0, 0.4, 1], delay: 0 }}
           >
             <img
               src="/truckinfra.jpg"
